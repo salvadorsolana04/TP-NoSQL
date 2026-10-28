@@ -1,0 +1,18 @@
+# Configuración local: puede tener credenciales. Se versiona solo .env.example
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos de MongoDB si alguna vez se usa un bind mount en vez del volumen con nombre
+mongo-data/
+
+# macOS
+.DS_Store
