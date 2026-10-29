@@ -62,7 +62,7 @@ TP NoSQL/
 - [x] `git init` y `.gitignore` (`.env`, `__pycache__`, `.ipynb_checkpoints`, volumen de datos)
 - [x] Docker Compose: mongo como replica set + volumen persistente (desde la Mac: `directConnection=true`)
 - [x] `scripts/transformar.py` (29/10): 208 clientes, 194 productos y 208 pedidos en `data/seed/`, en Extended JSON y reproducibles
-- [ ] `scripts/cargar.py`
+- [x] `scripts/cargar.py` (29/10): reinicia la base, carga el seed y verifica conteos y referencias. Falta sumarle los índices
 - [ ] 10 consultas (5.3): 2 de comparación, 1 lógica, 1 sobre anidados, 1 sobre arreglos, 1 con proyección + sort + limit, 2 con aggregate, 1 de agrupamiento estadístico, 1 libre (por ejemplo, `$lookup` de ventas por categoría)
 - [ ] Índices + explain (5.5)
 - [ ] API CRUD de `/productos` con repositorios, validación y códigos HTTP (5.4)

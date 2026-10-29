@@ -1,0 +1,87 @@
+"""Reinicia la base y carga los documentos de data/seed. Después verifica conteos y referencias.
+
+Uso: python scripts/cargar.py   (con Mongo levantado: docker compose up -d --wait)
+
+Se puede correr todas las veces que haga falta: siempre deja la base en el mismo estado,
+porque borra todo antes de cargar y el seed tiene los _id fijos.
+"""
+import os
+import sys
+from pathlib import Path
+
+from bson import json_util
+from dotenv import load_dotenv
+from pymongo import MongoClient
+
+RAIZ = Path(__file__).resolve().parent.parent
+SEED = RAIZ / "data" / "seed"
+
+# Clientes y productos antes que pedidos: Mongo no exige el orden (no hay claves foráneas),
+# pero así la base nunca tiene pedidos que apunten a algo que todavía no existe.
+COLECCIONES = ["clientes", "productos", "pedidos"]
+
+
+def leer_seed(nombre: str) -> list[dict]:
+    # json_util.loads, no json.load: convierte {"$oid": ...} y {"$date": ...} en
+    # ObjectId y datetime. Si no, se guardarían como subdocumentos y las referencias
+    # y los filtros por fecha dejarían de funcionar.
+    with open(SEED / f"{nombre}.json", encoding="utf-8") as f:
+        return json_util.loads(f.read())
+
+
+def verificar_referencias(db) -> list[str]:
+    """Mongo no valida referencias entre colecciones, así que lo chequeamos nosotros."""
+    errores = []
+
+    ids_clientes = set(db.clientes.distinct("_id"))
+    clientes_faltantes = set(db.pedidos.distinct("cliente_id")) - ids_clientes
+    if clientes_faltantes:
+        errores.append(f"{len(clientes_faltantes)} cliente_id de pedidos no existen en clientes")
+
+    # distinct sobre "items.producto_id" recorre el arreglo de ítems de cada pedido.
+    ids_productos = set(db.productos.distinct("_id"))
+    productos_faltantes = set(db.pedidos.distinct("items.producto_id")) - ids_productos
+    if productos_faltantes:
+        errores.append(f"{len(productos_faltantes)} producto_id de ítems no existen en productos")
+
+    return errores
+
+
+def main() -> None:
+    load_dotenv(RAIZ / ".env")
+    # Los valores por defecto son los de .env.example, para que funcione aunque falte el .env.
+    uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/?directConnection=true")
+    nombre_db = os.getenv("MONGO_DB", "ecommerce")
+
+    cliente = MongoClient(uri, serverSelectionTimeoutMS=5000)
+    db = cliente[nombre_db]
+
+    # Borrar la base entera (y no solo vaciar colecciones) también elimina índices y
+    # colecciones viejas: la carga parte siempre del mismo estado.
+    cliente.drop_database(nombre_db)
+    print(f"base '{nombre_db}' reiniciada")
+
+    errores = []
+    for nombre in COLECCIONES:
+        documentos = leer_seed(nombre)
+        db[nombre].insert_many(documentos)
+        en_base = db[nombre].count_documents({})
+        print(f"{nombre}: {en_base} documentos (seed: {len(documentos)})")
+        if en_base != len(documentos):
+            errores.append(f"{nombre}: se esperaban {len(documentos)} y hay {en_base}")
+
+    errores += verificar_referencias(db)
+
+    # TODO: crear los índices (mongo/indices.js) cuando estén definidos.
+
+    if errores:
+        print("\nERRORES:")
+        for error in errores:
+            print(f"  - {error}")
+        # Código de salida distinto de 0 para que una prueba o un script lo detecte.
+        sys.exit(1)
+    print("\nverificación OK: conteos y referencias correctos")
+
+
+if __name__ == "__main__":
+    main()

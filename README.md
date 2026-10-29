@@ -29,6 +29,18 @@ Diseño del modelo: [`docs/01_diseno_modelo_documental.md`](docs/01_diseno_model
    docker compose exec mongo mongosh --quiet --eval "rs.status().members[0].stateStr"
    ```
 
+4. Instalar las dependencias de Python (conviene hacerlo en un entorno virtual):
+
+   ```bash
+   python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+   ```
+
+5. Cargar los datos. Borra la base `ecommerce`, carga `data/seed/` y verifica conteos (208 clientes, 194 productos, 208 pedidos) y que todas las referencias de los pedidos existan. Se puede repetir las veces que haga falta.
+
+   ```bash
+   python scripts/cargar.py
+   ```
+
 ## Bajar el entorno
 
 ```bash
@@ -56,4 +68,6 @@ Mongo corre sin usuario ni contraseña y solo escucha en `127.0.0.1`, así que n
 
 `data/raw/` tiene los JSON originales de [DummyJSON](https://dummyjson.com). `users.json` incluye campos como `password`, `ssn` o `bank`: son **datos ficticios** del dataset, no secretos reales, y se descartan al transformar los datos.
 
-<!-- Pendiente: cargar datos (scripts/cargar.py), correr la API y las pruebas. -->
+`data/seed/` tiene los documentos finales, generados con `python scripts/transformar.py` (reproducible, siempre da los mismos archivos). Ya están versionados, así que para cargar la base no hace falta volver a generarlos.
+
+<!-- Pendiente: correr la API y las pruebas. -->
