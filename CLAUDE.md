@@ -61,7 +61,8 @@ TP NoSQL/
 - [x] Diseño documental en borrador (`docs/01_diseno_modelo_documental.md`), a cerrar en grupo el viernes
 - [x] `git init` y `.gitignore` (`.env`, `__pycache__`, `.ipynb_checkpoints`, volumen de datos)
 - [x] Docker Compose: mongo como replica set + volumen persistente (desde la Mac: `directConnection=true`)
-- [ ] `scripts/transformar.py` y `scripts/cargar.py`
+- [x] `scripts/transformar.py` (29/10): 208 clientes, 194 productos y 208 pedidos en `data/seed/`, en Extended JSON y reproducibles
+- [ ] `scripts/cargar.py`
 - [ ] 10 consultas (5.3): 2 de comparación, 1 lógica, 1 sobre anidados, 1 sobre arreglos, 1 con proyección + sort + limit, 2 con aggregate, 1 de agrupamiento estadístico, 1 libre (por ejemplo, `$lookup` de ventas por categoría)
 - [ ] Índices + explain (5.5)
 - [ ] API CRUD de `/productos` con repositorios, validación y códigos HTTP (5.4)
@@ -70,6 +71,7 @@ TP NoSQL/
 - [ ] README e informe técnico (7)
 
 ## Reglas
+- **Antes de levantar Docker o correr scripts, si no existe `.env`, crearlo con `cp .env.example .env`.** La puesta en marcha completa está en `README.md`.
 - No versionar secretos ni `.env`.
 - Todo tiene que poder reproducirse desde cero con: `docker compose up -d` → `python scripts/cargar.py` → pruebas.
 - Los conteos y números que vayan al informe se verifican corriendo el script, no a ojo.

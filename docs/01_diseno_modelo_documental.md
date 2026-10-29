@@ -127,6 +127,7 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 ```
 
 - `email` es obligatorio y único. Los demás campos son obligatorios salvo `telefono`.
+- `fecha_alta` se genera entre ene-2024 y oct-2025, antes del primer pedido, para que ningún cliente compre antes de existir.
 - **Se descartan** password, ssn, ein, bank, crypto, ip, macAddress, userAgent, bloodGroup, height, weight, eyeColor, hair, university, company, image y maidenName. El criterio es la **minimización de datos**: un e-commerce no necesita esos datos, y la consigna pide no versionar secretos.
 - **Las coordenadas se descartan:** en DummyJSON son aleatorias (por ejemplo, latitud −77, en la Antártida) y no coinciden con la ciudad, así que no sirven para consultas geoespaciales.
 
@@ -162,6 +163,10 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 - **Datos generados a partir del carrito:** `fecha` repartida entre nov-2025 y oct-2026, `estado` con más peso en "entregado", `metodo_pago`, un `historial_estados` coherente con el estado final, y `direccion_envio` copiada del cliente.
 - **Reasignación de clientes:** en DummyJSON hay un carrito por usuario, lo que no permite medir recompra. La transformación reasigna `cliente_id`, con la misma semilla, para que haya clientes con varios pedidos y clientes sin ninguno.
 - El stock de los productos se carga **tal cual viene en el dataset**: los pedidos históricos no lo vuelven a descontar.
+- **Estado según la fecha:** el historial se arma con demoras realistas (pago en minutos, envío en 0,5 a 3 días, entrega en 1 a 6 días) y se corta en una fecha "hoy" fija (28/10/2026). Así un pedido viejo queda entregado y solo los recientes quedan en camino. Un 12% se cancela desde pendiente o pagado.
+- **Ítems repetidos:** 12 carritos repiten un producto en dos líneas. Se fusionan en un ítem sumando las cantidades.
+- **`numero`** es correlativo en orden cronológico, desde 1001.
+- **Resultado** (verificado con el script): 208 pedidos, 788 ítems, 2417 unidades; 151 clientes con al menos un pedido (45 con recompra) y 57 sin pedidos; 183 entregados, 23 cancelados, 1 enviado y 1 pagado.
 
 ## 6. Relaciones y decisiones: embeber o referenciar
 
@@ -204,4 +209,5 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 - DELETE de producto: físico o lógico.
 - Nombres de campos en español (propuesta actual) o mantener los originales en inglés.
 - Validación de esquema con `$jsonSchema` en MongoDB (extensión opcional) además de la de Pydantic en la API.
+- `cantidad_minima`: el dataset trae valores de hasta 50, pero los carritos tienen como máximo 5 unidades por ítem, así que casi todos los pedidos históricos la violan. Hay que elegir entre sacarla, achicarla en la transformación o dejarla como dato informativo que la API no valida.
 - Reparto de tareas: diseño e informe / carga y consultas / API / análisis y Docker.

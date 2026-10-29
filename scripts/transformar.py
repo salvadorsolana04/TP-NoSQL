@@ -221,6 +221,111 @@ def transformar_productos(products: list[dict]) -> tuple[list[dict], dict[int, d
     return productos, por_id
 
 
+# ---------------------------------------------------------------- pedidos
+
+PEDIDOS_DESDE = datetime(2025, 11, 1, tzinfo=timezone.utc)
+# "Hoy" es fijo y no datetime.now(): si no, el estado de los pedidos cambiaría
+# según el día en que se corra el script y se perdería la reproducibilidad.
+HOY = datetime(2026, 10, 28, 23, 59, tzinfo=timezone.utc)
+
+METODOS_PAGO = ["tarjeta_credito", "tarjeta_debito", "mercado_pago", "transferencia"]
+PROB_CANCELADO = 0.12
+
+
+def generar_historial(fecha: datetime) -> list[dict]:
+    """Arma la secuencia pendiente -> pagado -> enviado -> entregado con demoras realistas
+    y la corta en HOY. Así el estado final sale solo: un pedido de hace meses queda
+    entregado y uno de ayer puede seguir pendiente, sin elegir el estado por separado."""
+    pasos = [
+        ("pendiente", fecha),
+        ("pagado", fecha + timedelta(minutes=rng.randint(2, 120))),
+    ]
+    pasos.append(("enviado", pasos[-1][1] + timedelta(hours=rng.randint(12, 72))))
+    pasos.append(("entregado", pasos[-1][1] + timedelta(hours=rng.randint(24, 144))))
+    historial = [{"estado": e, "fecha": f} for e, f in pasos if f <= HOY]
+
+    # Según el diseño solo se cancela desde pendiente o pagado. Se cancela
+    # desde el último de esos dos estados que haya llegado a ocurrir.
+    if rng.random() < PROB_CANCELADO:
+        historial = historial[:2]
+        cancelacion = historial[-1]["fecha"] + timedelta(hours=rng.randint(1, 48))
+        if cancelacion <= HOY:
+            historial.append({"estado": "cancelado", "fecha": cancelacion})
+    return historial
+
+
+def asignar_clientes(clientes: list[dict], cantidad: int) -> list[dict]:
+    """Reasigna los carritos a clientes con pesos desiguales: en DummyJSON hay un carrito
+    por usuario, y así no se podría medir recompra ni encontrar clientes sin pedidos."""
+    # Un 25% de los clientes no compra nunca (peso 0). El resto tiene peso 1, 2 o 4,
+    # así aparecen unos pocos clientes frecuentes, como en una tienda real.
+    pesos = [0 if rng.random() < 0.25 else rng.choice([1, 1, 1, 2, 4]) for _ in clientes]
+    compradores = [c for c, p in zip(clientes, pesos) if p > 0]
+    # Primero un pedido para cada comprador; si se sortearan todos por peso, con solo
+    # 208 pedidos la mitad de los clientes quedaba sin comprar por puro azar.
+    extra = rng.choices(clientes, weights=pesos, k=cantidad - len(compradores))
+    asignados = compradores + extra
+    rng.shuffle(asignados)  # para que los primeros carritos no vayan siempre a compradores únicos
+    return asignados
+
+
+def armar_items(productos_carrito: list[dict], productos_por_id: dict[int, dict]) -> list[dict]:
+    # 12 carritos repiten un producto en dos líneas: se fusionan en un solo ítem
+    # para que la transacción descuente el stock una vez por producto.
+    cantidades: dict[int, int] = {}
+    for linea in productos_carrito:
+        cantidades[linea["id"]] = cantidades.get(linea["id"], 0) + linea["quantity"]
+
+    items = []
+    for id_raw, cantidad in cantidades.items():
+        prod = productos_por_id[id_raw]
+        # Se copian sku, título y precio para congelarlos a la fecha de compra
+        # (sección 6 del diseño); producto_id queda para devolver stock y cruzar.
+        items.append({
+            "producto_id": prod["_id"],
+            "sku": prod["sku"],
+            "titulo": prod["titulo"],
+            "precio_unitario": prod["precio"],
+            "descuento_pct": prod["descuento_pct"],
+            "cantidad": cantidad,
+            "subtotal": round(prod["precio"] * cantidad * (1 - prod["descuento_pct"] / 100), 2),
+        })
+    return items
+
+
+def transformar_pedidos(carts: list[dict], clientes: list[dict],
+                        productos_por_id: dict[int, dict]) -> list[dict]:
+    pedidos = []
+    for cart, cliente in zip(carts, asignar_clientes(clientes, len(carts))):
+        items = armar_items(cart["products"], productos_por_id)
+        bruto = round(sum(i["precio_unitario"] * i["cantidad"] for i in items), 2)
+        total = round(sum(i["subtotal"] for i in items), 2)
+        historial = generar_historial(fecha_al_azar(PEDIDOS_DESDE, HOY))
+        pedidos.append({
+            "_id": nuevo_object_id(),
+            "cliente_id": cliente["_id"],
+            # Copia de nombre y email para mostrar el pedido sin hacer un $lookup a clientes
+            "cliente": {"nombre": f'{cliente["nombre"]} {cliente["apellido"]}',
+                        "email": cliente["email"]},
+            "fecha": historial[0]["fecha"],
+            "estado": historial[-1]["estado"],
+            "historial_estados": historial,
+            "metodo_pago": rng.choices(METODOS_PAGO, weights=[45, 20, 25, 10])[0],
+            # Copia (no referencia): el envío va a la dirección vigente al comprar
+            "direccion_envio": dict(cliente["direccion"]),
+            "items": items,
+            # descuento por diferencia para que siempre se cumpla bruto - descuento == total
+            "totales": {"bruto": bruto, "descuento": round(bruto - total, 2), "total": total},
+            "cantidad_unidades": sum(i["cantidad"] for i in items),
+        })
+
+    # El número de pedido es correlativo en orden cronológico, como en un sistema real
+    # donde se asigna al crearse. Se ordena recién al final para no alterar el rng.
+    # Se arma un dict nuevo para que "numero" quede segundo, como en el diseño.
+    pedidos.sort(key=lambda p: p["fecha"])
+    return [{"_id": p.pop("_id"), "numero": n, **p} for n, p in enumerate(pedidos, start=1001)]
+
+
 def main() -> None:
     # El orden importa: todos usan el mismo rng, así que clientes va primero
     # para que agregar productos no cambie los clientes ya generados.
@@ -228,9 +333,13 @@ def main() -> None:
     escribir_seed("clientes", clientes)
     print(f"clientes: {len(clientes)}")
 
-    productos, _productos_por_id = transformar_productos(leer_raw("products"))
+    productos, productos_por_id = transformar_productos(leer_raw("products"))
     escribir_seed("productos", productos)
     print(f"productos: {len(productos)}")
+
+    pedidos = transformar_pedidos(leer_raw("carts"), clientes, productos_por_id)
+    escribir_seed("pedidos", pedidos)
+    print(f"pedidos: {len(pedidos)}")
 
 
 if __name__ == "__main__":
