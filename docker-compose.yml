@@ -1,0 +1,58 @@
+# Entorno del TP: MongoDB 7 como replica set de un solo nodo.
+#
+# Levantar:   docker compose up -d --wait   (--wait espera a que Mongo sea PRIMARY)
+# Bajar:      docker compose down           (los datos quedan en el volumen)
+# Desde cero: docker compose down -v        (borra también el volumen)
+
+services:
+  mongo:
+    image: mongo:7
+    # --replSet: las transacciones multidocumento necesitan el oplog, que solo existe
+    # en un replica set. Un nodo alcanza; no buscamos alta disponibilidad, sino transacciones.
+    # --bind_ip_all: sin esto Mongo escucha solo en su propio localhost y los demás
+    # contenedores (mongo-init, la api) no podrían conectarse.
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+    ports:
+      # Solo 127.0.0.1: la base no tiene usuario, así que no la exponemos a la red local.
+      - "127.0.0.1:${MONGO_PORT:-27017}:27017"
+    volumes:
+      - mongo-data:/data/db
+    # "Sano" significa que ya es PRIMARY, no solo que el proceso arrancó. Antes de
+    # rs.initiate() el nodo responde al ping pero rechaza escrituras.
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "quit(db.hello().isWritablePrimary ? 0 : 1)"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  # Contenedor que corre una vez y termina: inicia el replica set si todavía no lo está.
+  # Es idempotente: si el volumen ya tiene la configuración, rs.status() funciona y no hace nada.
+  mongo-init:
+    image: mongo:7
+    depends_on:
+      mongo:
+        condition: service_started
+    restart: "no"
+    # El miembro se registra como "mongo:27017" (nombre del servicio), que es como lo
+    # ven los otros contenedores. Si fuera "localhost:27017", la api dentro de Docker
+    # intentaría conectarse a sí misma. Desde la Mac se usa directConnection=true (ver .env.example).
+    command:
+      - bash
+      - -c
+      - |
+        until mongosh --host mongo --quiet --eval "db.adminCommand('ping')" >/dev/null 2>&1; do
+          echo "esperando a mongo..."; sleep 1
+        done
+        mongosh --host mongo --quiet --eval "
+          try {
+            rs.status();
+            print('replica set rs0 ya iniciado');
+          } catch (e) {
+            rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: 'mongo:27017' }] });
+            print('replica set rs0 iniciado');
+          }"
+
+volumes:
+  # Volumen con nombre: sobrevive a "docker compose down" y lo administra Docker.
+  mongo-data:

@@ -5,7 +5,7 @@ TP integrador de **Base de Datos Aplicada** (UCC). El equipo son Justo Solana Al
 Se construye un **e-commerce** sobre **MongoDB**: catálogo de productos con atributos variables, clientes y pedidos que descuentan stock. Hay que entregar una API con capa de repositorios, consultas y agregaciones, índices con `explain`, un caso de consistencia con transacción, un notebook de análisis y Docker Compose.
 **Hay una sola entrega final** (no hay entregas parciales, aunque la consigna original las mencione).
 
-- Consigna: `docs/consigna.pdf` (si no está, pedírsela a Salvador)
+- Consigna: `docs/Consigna_Proyecto_NoSQL_MongoDB.pdf` (si no está, pedírsela a Salvador)
 - **Diseño acordado: `docs/01_diseno_modelo_documental.md`**. Es la fuente de verdad del modelo. No cambiar colecciones ni campos sin avisar y actualizar ese documento.
 
 ## Modo de trabajo (IMPORTANTE)
@@ -59,8 +59,8 @@ TP NoSQL/
 - [x] Dominio elegido: e-commerce
 - [x] Datos crudos descargados en `data/raw/` (194 productos, 208 usuarios, 208 carritos, verificados: todos los ids de los carritos existen)
 - [x] Diseño documental en borrador (`docs/01_diseno_modelo_documental.md`), a cerrar en grupo el viernes
-- [ ] `git init` y `.gitignore` (`.env`, `__pycache__`, `.ipynb_checkpoints`, volumen de datos)
-- [ ] Docker Compose: mongo como replica set + volumen persistente
+- [x] `git init` y `.gitignore` (`.env`, `__pycache__`, `.ipynb_checkpoints`, volumen de datos)
+- [x] Docker Compose: mongo como replica set + volumen persistente (desde la Mac: `directConnection=true`)
 - [ ] `scripts/transformar.py` y `scripts/cargar.py`
 - [ ] 10 consultas (5.3): 2 de comparación, 1 lógica, 1 sobre anidados, 1 sobre arreglos, 1 con proyección + sort + limit, 2 con aggregate, 1 de agrupamiento estadístico, 1 libre (por ejemplo, `$lookup` de ventas por categoría)
 - [ ] Índices + explain (5.5)
