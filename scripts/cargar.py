@@ -1,4 +1,4 @@
-"""Reinicia la base y carga los documentos de data/seed. Después verifica conteos y referencias.
+"""Reinicia la base, carga los documentos de data/seed, verifica conteos y referencias y crea los índices.
 
 Uso: python scripts/cargar.py   (con Mongo levantado: docker compose up -d --wait)
 
@@ -6,6 +6,7 @@ Se puede correr todas las veces que haga falta: siempre deja la base en el mismo
 porque borra todo antes de cargar y el seed tiene los _id fijos.
 """
 import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -47,6 +48,24 @@ def verificar_referencias(db) -> list[str]:
     return errores
 
 
+def crear_indices(nombre_db: str) -> list[str]:
+    """Corre mongo/indices.js con el mongosh del contenedor.
+
+    El .js es la única definición de los índices (es el entregable de 5.5); ejecutarlo
+    desde acá evita tener una copia en Python que se desincronice. Requiere el compose
+    levantado, que monta mongo/ en /scripts.
+    """
+    resultado = subprocess.run(
+        ["docker", "compose", "exec", "-T", "mongo",
+         "mongosh", nombre_db, "--quiet", "--file", "/scripts/indices.js"],
+        cwd=RAIZ, capture_output=True, text=True,
+    )
+    print(resultado.stdout.rstrip())
+    if resultado.returncode != 0:
+        return [f"no se pudieron crear los índices: {resultado.stderr.strip()}"]
+    return []
+
+
 def main() -> None:
     load_dotenv(RAIZ / ".env")
     # Los valores por defecto son los de .env.example, para que funcione aunque falte el .env.
@@ -72,7 +91,9 @@ def main() -> None:
 
     errores += verificar_referencias(db)
 
-    # TODO: crear los índices (mongo/indices.js) cuando estén definidos.
+    # Los índices se crean después de cargar: construirlos una vez sobre los datos es más
+    # barato que actualizarlos documento por documento durante el insert_many.
+    errores += crear_indices(nombre_db)
 
     if errores:
         print("\nERRORES:")

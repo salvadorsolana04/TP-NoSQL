@@ -35,11 +35,19 @@ Diseño del modelo: [`docs/01_diseno_modelo_documental.md`](docs/01_diseno_model
    python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
    ```
 
-5. Cargar los datos. Borra la base `ecommerce`, carga `data/seed/` y verifica conteos (208 clientes, 194 productos, 208 pedidos) y que todas las referencias de los pedidos existan. Se puede repetir las veces que haga falta.
+5. Cargar los datos. Borra la base `ecommerce`, carga `data/seed/`, verifica conteos (208 clientes, 194 productos, 208 pedidos) y que todas las referencias de los pedidos existan, y crea los índices de `mongo/indices.js`. Se puede repetir las veces que haga falta.
 
    ```bash
    python scripts/cargar.py
    ```
+
+## Índices y explain
+
+Los scripts de `mongo/` están montados en el contenedor en `/scripts`. Para ver el uso de los índices (el análisis está en [`mongo/explain.md`](mongo/explain.md)):
+
+```bash
+docker compose exec mongo mongosh ecommerce --quiet --file /scripts/explain.js
+```
 
 ## Bajar el entorno
 

@@ -17,6 +17,9 @@ services:
       - "127.0.0.1:${MONGO_PORT:-27017}:27017"
     volumes:
       - mongo-data:/data/db
+      # Scripts de mongo/ (índices, consultas, explain) visibles dentro del contenedor para
+      # correrlos con mongosh --file. Solo lectura: el contenedor no tiene por qué modificarlos.
+      - ./mongo:/scripts:ro
     # "Sano" significa que ya es PRIMARY, no solo que el proceso arrancó. Antes de
     # rs.initiate() el nodo responde al ping pero rechaza escrituras.
     healthcheck:
