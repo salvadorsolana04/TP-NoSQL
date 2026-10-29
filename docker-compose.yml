@@ -1,6 +1,6 @@
-# Entorno del TP: MongoDB 7 como replica set de un solo nodo.
+# Entorno del TP: MongoDB 7 como replica set de un solo nodo y la API (FastAPI).
 #
-# Levantar:   docker compose up -d --wait   (--wait espera a que Mongo sea PRIMARY)
+# Levantar:   docker compose up -d --wait --build   (--wait espera a que Mongo sea PRIMARY y la API responda)
 # Bajar:      docker compose down           (los datos quedan en el volumen)
 # Desde cero: docker compose down -v        (borra también el volumen)
 
@@ -55,6 +55,31 @@ services:
             rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: 'mongo:27017' }] });
             print('replica set rs0 iniciado');
           }"
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      # Dentro de la red de Compose, Mongo se llama "mongo" (el nombre del servicio).
+      # "localhost" acá sería el propio contenedor de la api. No se usa el MONGO_URI del
+      # .env porque ese es el de la Mac (localhost + directConnection).
+      MONGO_URI: mongodb://mongo:27017/?replicaSet=rs0
+      MONGO_DB: ${MONGO_DB:-ecommerce}
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    depends_on:
+      # Espera a que el replica set esté iniciado y Mongo sea PRIMARY: antes, las
+      # escrituras y transacciones fallarían.
+      mongo-init:
+        condition: service_completed_successfully
+      mongo:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/salud')"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
 volumes:
   # Volumen con nombre: sobrevive a "docker compose down" y lo administra Docker.

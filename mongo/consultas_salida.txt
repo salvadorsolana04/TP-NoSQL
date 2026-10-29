@@ -1,0 +1,151 @@
+
+=== 1. Productos por agotarse (0 < stock < 10) (21 resultados)
+  {"sku":"MOB-APP-APP-102","titulo":"Apple Airpower Wireless Charger","categoria":"mobile-accessories","stock":1}
+  {"sku":"MOB-APP-APP-105","titulo":"Apple MagSafe Battery Pack","categoria":"mobile-accessories","stock":1}
+  {"sku":"SUN-FAS-CLA-155","titulo":"Classic Sun Glasses","categoria":"sunglasses","stock":1}
+  {"sku":"WOM-BRD-TRO-184","titulo":"Tropical Earring","categoria":"womens-jewellery","stock":1}
+  {"sku":"MEN-CAS-SHO-086","titulo":"Man Short Sleeve Shirt","categoria":"mens-shirts","stock":2}
+  {"sku":"GRO-BRD-GRE-026","titulo":"Green Chili Pepper","categoria":"groceries","stock":3}
+  {"sku":"WOM-COM-BLA-185","titulo":"Black & Brown Slipper","categoria":"womens-shoes","stock":3}
+  {"sku":"FRA-DOL-DOL-009","titulo":"Dolce Shine Eau de","categoria":"fragrances","stock":4}
+  {"sku":"WOM-ROL-ROL-192","titulo":"Rolex Datejust Women","categoria":"womens-watches","stock":4}
+  {"sku":"SPO-BRD-TEN-152","titulo":"Tennis Racket","categoria":"sports-accessories","stock":6}
+  {"sku":"WOM-BRD-DRE-180","titulo":"Dress Pea","categoria":"womens-dresses","stock":6}
+  {"sku":"FUR-BAT-WOO-015","titulo":"Wooden Bathroom Sink With Mirror","categoria":"furniture","stock":7}
+  {"sku":"KIT-BRD-FOR-058","titulo":"Fork","categoria":"kitchen-accessories","stock":7}
+  {"sku":"KIT-BRD-KNI-064","titulo":"Knife","categoria":"kitchen-accessories","stock":7}
+  {"sku":"MEN-NIK-NIK-088","titulo":"Nike Air Jordan 1 Red And Black","categoria":"mens-shoes","stock":7}
+  {"sku":"SMA-VIV-VIV-136","titulo":"Vivo X21","categoria":"smartphones","stock":7}
+  {"sku":"WOM-FAS-SHO-189","titulo":"Red Shoes","categoria":"womens-shoes","stock":7}
+  {"sku":"GRO-BRD-APP-016","titulo":"Apple","categoria":"groceries","stock":8}
+  {"sku":"GRO-BRD-EGG-023","titulo":"Eggs","categoria":"groceries","stock":9}
+  {"sku":"HOM-BRD-TAB-047","titulo":"Table Lamp","categoria":"home-decoration","stock":9}
+  {"sku":"KIT-BRD-BOX-051","titulo":"Boxed Blender","categoria":"kitchen-accessories","stock":9}
+
+=== 2. Tecnología de hasta $500 (15 resultados)
+  {"titulo":"Realme C35","categoria":"smartphones","precio":149.99}
+  {"titulo":"iPhone 5s","categoria":"smartphones","precio":199.99}
+  {"titulo":"Oppo A57","categoria":"smartphones","precio":249.99}
+  {"titulo":"Vivo S1","categoria":"smartphones","precio":249.99}
+  {"titulo":"Oppo K1","categoria":"smartphones","precio":299.99}
+  {"titulo":"Realme X","categoria":"smartphones","precio":299.99}
+  {"titulo":"Samsung Galaxy S7","categoria":"smartphones","precio":299.99}
+  {"titulo":"Vivo V9","categoria":"smartphones","precio":299.99}
+  {"titulo":"iPhone 6","categoria":"smartphones","precio":299.99}
+  {"titulo":"Realme XT","categoria":"smartphones","precio":349.99}
+  {"titulo":"Samsung Galaxy Tab White","categoria":"tablets","precio":349.99}
+  {"titulo":"Oppo F19 Pro Plus","categoria":"smartphones","precio":399.99}
+  {"titulo":"Samsung Galaxy S8","categoria":"smartphones","precio":499.99}
+  {"titulo":"Vivo X21","categoria":"smartphones","precio":499.99}
+  {"titulo":"iPad Mini 2021 Starlight","categoria":"tablets","precio":499.99}
+
+=== 3. Con stock y (descuento >= 15% o rating >= 4.5), top 10 por descuento (10 resultados)
+  {"titulo":"Tennis Racket","descuento_pct":19.61,"stock":6,"rating_promedio":4.33}
+  {"titulo":"iPhone X","descuento_pct":19.59,"stock":37,"rating_promedio":3.67}
+  {"titulo":"Samsung Galaxy S7","descuento_pct":19.55,"stock":67,"rating_promedio":3}
+  {"titulo":"Metal Baseball Bat","descuento_pct":19.51,"stock":16,"rating_promedio":4.67}
+  {"titulo":"Man Plaid Shirt","descuento_pct":19.5,"stock":82,"rating_promedio":3}
+  {"titulo":"Selfie Lamp with iPhone","descuento_pct":19.4,"stock":58,"rating_promedio":3.67}
+  {"titulo":"Girl Summer Dress","descuento_pct":19.2,"stock":43,"rating_promedio":4.33}
+  {"titulo":"Selfie Stick Monopod","descuento_pct":19.12,"stock":11,"rating_promedio":3}
+  {"titulo":"Bedside Table African Cherry","descuento_pct":19.09,"stock":64,"rating_promedio":4}
+  {"titulo":"Marni Red & Black Suit","descuento_pct":19.02,"stock":62,"rating_promedio":4}
+  total que cumplen: 64
+
+=== 4. Equipos con RAM >= 8 GB y almacenamiento >= 256 GB (8 resultados)
+  {"titulo":"Realme C35","categoria":"smartphones","precio":149.99,"atributos":{"ram_gb":8,"almacenamiento_gb":512}}
+  {"titulo":"Oppo K1","categoria":"smartphones","precio":299.99,"atributos":{"ram_gb":12,"almacenamiento_gb":256}}
+  {"titulo":"Oppo F19 Pro Plus","categoria":"smartphones","precio":399.99,"atributos":{"ram_gb":8,"almacenamiento_gb":512}}
+  {"titulo":"Lenovo Yoga 920","categoria":"laptops","precio":1099.99,"atributos":{"ram_gb":16,"almacenamiento_gb":1024}}
+  {"titulo":"Huawei Matebook X Pro","categoria":"laptops","precio":1399.99,"atributos":{"ram_gb":16,"almacenamiento_gb":1024}}
+  {"titulo":"New DELL XPS 13 9300 Laptop","categoria":"laptops","precio":1499.99,"atributos":{"ram_gb":8,"almacenamiento_gb":1024}}
+  {"titulo":"Asus Zenbook Pro Dual Screen Laptop","categoria":"laptops","precio":1799.99,"atributos":{"ram_gb":16,"almacenamiento_gb":512}}
+  {"titulo":"Apple MacBook Pro 14 Inch Space Grey","categoria":"laptops","precio":1999.99,"atributos":{"ram_gb":16,"almacenamiento_gb":256}}
+
+=== 5. Productos con reseñas negativas (rating <= 2), top 5 (5 resultados)
+  {"titulo":"Cricket Ball","rating_promedio":1.33,"negativas":3}
+  {"titulo":"Decoration Swing","rating_promedio":2,"negativas":2}
+  {"titulo":"Annibale Colombo Bed","rating_promedio":2.33,"negativas":2}
+  {"titulo":"Grater Black","rating_promedio":2.33,"negativas":2}
+  {"titulo":"Electric Stove","rating_promedio":2.33,"negativas":2}
+  total con al menos una negativa: 101
+
+=== 6. Los 5 pedidos de mayor importe (no cancelados) (5 resultados)
+  {"numero":1028,"cliente":{"nombre":"Madison Stewart"},"fecha":"2025-12-31T02:53:37.000Z","totales":{"total":155507.16},"cantidad_unidades":15}
+  {"numero":1044,"cliente":{"nombre":"Aaliyah Martinez"},"fecha":"2026-01-20T07:16:26.000Z","totales":{"total":130175.28},"cantidad_unidades":18}
+  {"numero":1176,"cliente":{"nombre":"Avery Perez"},"fecha":"2026-09-09T12:25:12.000Z","totales":{"total":129783.32},"cantidad_unidades":24}
+  {"numero":1160,"cliente":{"nombre":"Scarlett Bowman"},"fecha":"2026-08-20T02:58:21.000Z","totales":{"total":125679},"cantidad_unidades":14}
+  {"numero":1142,"cliente":{"nombre":"Caleb Nelson"},"fecha":"2026-07-18T18:57:30.000Z","totales":{"total":125461.58},"cantidad_unidades":23}
+
+=== 7. Ventas por mes (12 resultados)
+  {"pedidos":6,"mes":"2025-11","importe":4415.78}
+  {"pedidos":18,"mes":"2025-12","importe":275567.34}
+  {"pedidos":19,"mes":"2026-01","importe":491634.81}
+  {"pedidos":14,"mes":"2026-02","importe":235379.19}
+  {"pedidos":18,"mes":"2026-03","importe":237570.36}
+  {"pedidos":14,"mes":"2026-04","importe":114946.56}
+  {"pedidos":13,"mes":"2026-05","importe":127119.19}
+  {"pedidos":14,"mes":"2026-06","importe":363947.34}
+  {"pedidos":19,"mes":"2026-07","importe":499121.19}
+  {"pedidos":15,"mes":"2026-08","importe":280088.76}
+  {"pedidos":15,"mes":"2026-09","importe":320486.95}
+  {"pedidos":20,"mes":"2026-10","importe":101742.43}
+
+=== 8. Top 5 productos por unidades vendidas (5 resultados)
+  {"titulo":"Samsung Galaxy S10","unidades":29,"pedidos":6,"importe":19164.95}
+  {"titulo":"Cat Food","unidades":29,"pedidos":10,"importe":235.75}
+  {"titulo":"Apple Airpods","unidades":25,"pedidos":9,"importe":2744.75}
+  {"titulo":"Vaseline Men Body and Face Lotion","unidades":25,"pedidos":7,"importe":216.31}
+  {"titulo":"Ice Cream","unidades":25,"pedidos":6,"importe":125.31}
+
+=== 9. Estadísticas de precio por categoría (24 resultados)
+  {"productos":5,"minimo":24999.99,"maximo":36999.99,"categoria":"vehicle","promedio":31199.99,"desvio":4019.95}
+  {"productos":6,"minimo":89.99,"maximo":13999.99,"categoria":"mens-watches","promedio":8098.32,"desvio":5412.33}
+  {"productos":5,"minimo":2999.99,"maximo":14999.99,"categoria":"motorcycle","promedio":7699.99,"desvio":4261.46}
+  {"productos":5,"minimo":129.99,"maximo":15999.99,"categoria":"womens-watches","promedio":6585.99,"desvio":6095.57}
+  {"productos":5,"minimo":1099.99,"maximo":1999.99,"categoria":"laptops","promedio":1559.99,"desvio":313.69}
+  {"productos":5,"minimo":299.99,"maximo":2499.99,"categoria":"furniture","promedio":1199.99,"desvio":853.23}
+  {"productos":3,"minimo":349.99,"maximo":599.99,"categoria":"tablets","promedio":483.32,"desvio":102.74}
+  {"productos":16,"minimo":149.99,"maximo":1099.99,"categoria":"smartphones","promedio":424.99,"desvio":254.95}
+  {"productos":5,"minimo":39.99,"maximo":599.99,"categoria":"womens-bags","promedio":175.99,"desvio":214.35}
+  {"productos":14,"minimo":12.99,"maximo":549.99,"categoria":"mobile-accessories","promedio":146.99,"desvio":175.33}
+  {"productos":5,"minimo":79.99,"maximo":149.99,"categoria":"mens-shoes","promedio":109.99,"desvio":24.49}
+  {"productos":5,"minimo":49.99,"maximo":179.99,"categoria":"womens-dresses","promedio":105.99,"desvio":44.99}
+  {"productos":5,"minimo":49.99,"maximo":129.99,"categoria":"fragrances","promedio":83.99,"desvio":26.53}
+  {"productos":5,"minimo":19.99,"maximo":79.99,"categoria":"womens-shoes","promedio":42.99,"desvio":20.88}
+  {"productos":5,"minimo":14.99,"maximo":59.99,"categoria":"home-decoration","promedio":38.99,"desvio":15.62}
+  {"productos":5,"minimo":19.99,"maximo":39.99,"categoria":"tops","promedio":29.99,"desvio":7.07}
+  {"productos":5,"minimo":19.99,"maximo":34.99,"categoria":"mens-shirts","promedio":27.59,"desvio":5}
+  {"productos":5,"minimo":19.99,"maximo":34.99,"categoria":"sunglasses","promedio":26.59,"desvio":5.31}
+  {"productos":3,"minimo":19.99,"maximo":29.99,"categoria":"womens-jewellery","promedio":24.99,"desvio":4.08}
+  {"productos":17,"minimo":5.99,"maximo":49.99,"categoria":"sports-accessories","promedio":24.11,"desvio":14.53}
+  {"productos":30,"minimo":3.99,"maximo":89.99,"categoria":"kitchen-accessories","promedio":17.69,"desvio":17.98}
+  {"productos":5,"minimo":8.99,"maximo":19.99,"categoria":"beauty","promedio":13.39,"desvio":3.93}
+  {"productos":3,"minimo":8.99,"maximo":12.99,"categoria":"skin-care","promedio":10.66,"desvio":1.7}
+  {"productos":27,"minimo":0.79,"maximo":19.99,"categoria":"groceries","promedio":5.47,"desvio":4.73}
+
+=== 10. Facturación por categoría (cruce pedidos → productos) (24 resultados)
+  {"unidades":57,"categoria":"vehicle","importe":1605533.28,"participacion_pct":52.6}
+  {"unidades":65,"categoria":"mens-watches","importe":513529.43,"participacion_pct":16.8}
+  {"unidades":58,"categoria":"motorcycle","importe":429326.15,"participacion_pct":14.1}
+  {"unidades":41,"categoria":"womens-watches","importe":212203.14,"participacion_pct":7}
+  {"unidades":71,"categoria":"furniture","importe":76942.31,"participacion_pct":2.5}
+  {"unidades":48,"categoria":"laptops","importe":73269.72,"participacion_pct":2.4}
+  {"unidades":166,"categoria":"smartphones","importe":68772,"participacion_pct":2.3}
+  {"unidades":173,"categoria":"mobile-accessories","importe":20050.61,"participacion_pct":0.7}
+  {"unidades":29,"categoria":"tablets","importe":10763.46,"participacion_pct":0.4}
+  {"unidades":68,"categoria":"mens-shoes","importe":7556.75,"participacion_pct":0.2}
+  {"unidades":62,"categoria":"womens-bags","importe":5849.91,"participacion_pct":0.2}
+  {"unidades":326,"categoria":"kitchen-accessories","importe":5071.1,"participacion_pct":0.2}
+  {"unidades":52,"categoria":"fragrances","importe":4258.71,"participacion_pct":0.1}
+  {"unidades":40,"categoria":"womens-dresses","importe":3468.12,"participacion_pct":0.1}
+  {"unidades":138,"categoria":"sports-accessories","importe":3084.18,"participacion_pct":0.1}
+  {"unidades":73,"categoria":"home-decoration","importe":2612.45,"participacion_pct":0.1}
+  {"unidades":71,"categoria":"tops","importe":2043.65,"participacion_pct":0.1}
+  {"unidades":318,"categoria":"groceries","importe":1689.43,"participacion_pct":0.1}
+  {"unidades":53,"categoria":"sunglasses","importe":1414.42,"participacion_pct":0}
+  {"unidades":45,"categoria":"womens-shoes","importe":1409.58,"participacion_pct":0}
+  {"unidades":57,"categoria":"mens-shirts","importe":1357.63,"participacion_pct":0}
+  {"unidades":35,"categoria":"womens-jewellery","importe":745.34,"participacion_pct":0}
+  {"unidades":60,"categoria":"beauty","importe":689.06,"participacion_pct":0}
+  {"unidades":41,"categoria":"skin-care","importe":379.47,"participacion_pct":0}

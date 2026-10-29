@@ -66,13 +66,17 @@ def crear_indices(nombre_db: str) -> list[str]:
     return []
 
 
-def main() -> None:
-    load_dotenv(RAIZ / ".env")
-    # Los valores por defecto son los de .env.example, para que funcione aunque falte el .env.
-    uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/?directConnection=true")
-    nombre_db = os.getenv("MONGO_DB", "ecommerce")
+def inicializar_contador(db) -> None:
+    """La API numera los pedidos nuevos con un contador atómico (ver
+    api/repositories/pedidos.py). Arranca en el último número del seed para seguir la
+    secuencia sin repetir."""
+    ultimo = db.pedidos.find_one(sort=[("numero", -1)], projection={"numero": 1})
+    db.contadores.insert_one({"_id": "pedidos", "ultimo": ultimo["numero"] if ultimo else 1000})
 
-    cliente = MongoClient(uri, serverSelectionTimeoutMS=5000)
+
+def cargar(cliente: MongoClient, nombre_db: str) -> list[str]:
+    """Reinicia la base nombre_db y la deja lista. Devuelve la lista de errores (vacía si
+    todo salió bien). Las pruebas la usan para armar su propia base."""
     db = cliente[nombre_db]
 
     # Borrar la base entera (y no solo vaciar colecciones) también elimina índices y
@@ -90,10 +94,21 @@ def main() -> None:
             errores.append(f"{nombre}: se esperaban {len(documentos)} y hay {en_base}")
 
     errores += verificar_referencias(db)
+    inicializar_contador(db)
 
     # Los índices se crean después de cargar: construirlos una vez sobre los datos es más
     # barato que actualizarlos documento por documento durante el insert_many.
     errores += crear_indices(nombre_db)
+    return errores
+
+
+def main() -> None:
+    load_dotenv(RAIZ / ".env")
+    # Los valores por defecto son los de .env.example, para que funcione aunque falte el .env.
+    uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/?directConnection=true")
+    nombre_db = os.getenv("MONGO_DB", "ecommerce")
+
+    errores = cargar(MongoClient(uri, serverSelectionTimeoutMS=5000), nombre_db)
 
     if errores:
         print("\nERRORES:")

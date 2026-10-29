@@ -1,2 +1,5 @@
+# Lo que necesita la API (es lo que se instala en la imagen de Docker) y los scripts de carga.
+fastapi==0.115.6
+uvicorn==0.34.0
 pymongo==4.10.1
 python-dotenv==1.0.1

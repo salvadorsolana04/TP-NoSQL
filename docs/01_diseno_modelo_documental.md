@@ -1,7 +1,7 @@
 # TP Integrador NoSQL · Diseño del modelo documental (entregable 5.1)
 
 Base de Datos Aplicada · UCC · Grupo: Justo Solana Allende, Salvador Solana Allende, Agustín Rodríguez Richard
-Estado: **borrador base** (28/10/2026) para cerrar en grupo el viernes. Lo marcado como *A decidir* queda abierto.
+Estado: **implementado** (29/10/2026). Las decisiones que estaban abiertas se tomaron al implementar y están en la sección 9; quedan para confirmar en grupo.
 
 ---
 
@@ -45,7 +45,7 @@ Un script de transformación (`scripts/transformar.py`) convierte los archivos c
 
 ## 5. Colecciones
 
-Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
+Total: **610 documentos** (194 productos + 208 clientes + 208 pedidos), más 1 documento técnico en `contadores` (5.4).
 
 ### 5.1. `productos` (entidad principal)
 
@@ -87,6 +87,7 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 | reviews | Sí (puede ser `[]`) | Arreglo embebido |
 | etiquetas, imagenes | Sí (pueden ser `[]`) | Arreglos de strings |
 | dimensiones | No | Documento anidado |
+| activo, eliminado_en | No | Solo existen en productos dados de baja (`activo: false`). Ausente = activo |
 
 **Atributos variables por categoría** (generados en la transformación, con semilla fija):
 
@@ -168,6 +169,14 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 - **`numero`** es correlativo en orden cronológico, desde 1001.
 - **Resultado** (verificado con el script): 208 pedidos, 788 ítems, 2417 unidades; 151 clientes con al menos un pedido (45 con recompra) y 57 sin pedidos; 183 entregados, 23 cancelados, 1 enviado y 1 pagado.
 
+### 5.4. `contadores` (técnica)
+
+```json
+{ "_id": "pedidos", "ultimo": 1208 }
+```
+
+Guarda el último `numero` de pedido usado. La API lo incrementa con `$inc` dentro de la transacción del pedido. Buscar el máximo y sumarle 1 fallaría con dos pedidos simultáneos, que leerían el mismo máximo: el `$inc` sobre un documento es atómico, y si dos transacciones lo modifican a la vez, Mongo detecta el conflicto y una se reintenta. `cargar.py` lo inicializa con el último número del seed. No es una entidad del dominio.
+
 ## 6. Relaciones y decisiones: embeber o referenciar
 
 | Relación | Cardinalidad | Decisión | Por qué |
@@ -179,7 +188,7 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 | Pedido → cliente | N a 1 | **Referencia (`cliente_id`) + copia** de nombre, email y dirección de envío | El cliente tiene vida propia y lo comparten muchos pedidos. La dirección se copia porque el envío se hace a la dirección vigente en la fecha de la compra. |
 | Producto → categoría | N a 1 | **Campo string** (sin colección) | La categoría no tiene datos propios, es solo una etiqueta. Si tuviera descripción, responsable o jerarquía, se justificaría una colección. |
 
-**Consecuencia para el CRUD:** como cada pedido guarda una copia de los datos del producto, borrar un producto no rompe los pedidos históricos. *A decidir:* DELETE físico o lógico (`activo: false`).
+**Consecuencia para el CRUD:** como cada pedido guarda una copia de los datos del producto, borrar un producto no rompe la visualización de los pedidos históricos. Aun así el DELETE es **lógico** (`activo: false`): el análisis de ventas por categoría hace `$lookup` de los ítems a `productos`, y con un borrado físico esas ventas quedarían sin categoría (ver sección 9).
 
 ## 7. Caso de consistencia (adelanto de la sección 5.6)
 
@@ -193,7 +202,7 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 - **Requisito de entorno:** MongoDB tiene que correr como **replica set**. En Docker Compose se levanta como replica set de un solo nodo (`--replSet rs0` más `rs.initiate()`).
 - La cancelación de un pedido (devolver stock y cambiar el estado) usa el mismo mecanismo.
 
-## 8. Índices previstos (tentativo, a validar con explain)
+## 8. Índices (implementados en `mongo/indices.js`, analizados en `mongo/explain.md`)
 
 | Colección | Índice | Consulta que apoya |
 |---|---|---|
@@ -202,12 +211,12 @@ Total estimado: **610 documentos** (194 productos + 208 clientes + 208 pedidos).
 | clientes | `{email: 1}` único | Unicidad y búsqueda por email |
 | pedidos | `{cliente_id: 1, fecha: -1}` | RF5: pedidos de un cliente, del más reciente al más viejo |
 | pedidos | `{estado: 1, fecha: 1}` | Reportes por estado y período |
-| *(extensión)* productos | texto sobre `titulo` y `descripcion` | Búsqueda de productos por palabra |
+| *(extensión, no implementada)* productos | texto sobre `titulo` y `descripcion` | Búsqueda de productos por palabra |
 
-## 9. A decidir en grupo (viernes)
+## 9. Decisiones tomadas al implementar (a confirmar en grupo)
 
-- DELETE de producto: físico o lógico.
-- Nombres de campos en español (propuesta actual) o mantener los originales en inglés.
-- Validación de esquema con `$jsonSchema` en MongoDB (extensión opcional) además de la de Pydantic en la API.
-- `cantidad_minima`: el dataset trae valores de hasta 50, pero los carritos tienen como máximo 5 unidades por ítem, así que casi todos los pedidos históricos la violan. Hay que elegir entre sacarla, achicarla en la transformación o dejarla como dato informativo que la API no valida.
-- Reparto de tareas: diseño e informe / carga y consultas / API / análisis y Docker.
+- **DELETE de producto: lógico.** Marca `activo: false` y `eliminado_en`. La API trata al producto como inexistente (404 en GET, PATCH y DELETE; no aparece en el listado; no se puede comprar), pero el documento sigue en la base. Motivos: los pedidos lo referencian por `producto_id` para devolver stock al cancelar y el análisis lo cruza para obtener la categoría. Costo: todas las consultas de la API filtran `activo: {$ne: false}`, y el `sku` de un producto dado de baja no se puede reutilizar (sigue en el índice único).
+- **Nombres de campos en español.** La transformación ya los genera así, y el dominio se explica en español en la defensa.
+- **Sin `$jsonSchema`.** La validación se hace con Pydantic en la API (tipos, rangos, campos obligatorios y desconocidos). La validación en Mongo protegería también contra escrituras que no pasen por la API; queda como extensión opcional.
+- **`cantidad_minima`: dato informativo.** Se conserva como viene del dataset, pero la API no la valida al crear un pedido. Validarla haría que casi todos los pedidos históricos fueran inválidos (los carritos tienen como máximo 5 unidades por ítem, y el mínimo llega a 50).
+- **Reparto de tareas:** pendiente.
