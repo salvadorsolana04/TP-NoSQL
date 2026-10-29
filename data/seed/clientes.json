@@ -1,0 +1,4786 @@
+[
+  {
+    "_id": {
+      "$oid": "a31c06bd463e3923bc1aadbd"
+    },
+    "nombre": "Emily",
+    "apellido": "Johnson",
+    "email": "emily.johnson@x.dummyjson.com",
+    "telefono": "+81 965-431-3024",
+    "fecha_nacimiento": {
+      "$date": "1996-05-30T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "626 Main Street",
+      "ciudad": "Phoenix",
+      "estado": "Mississippi",
+      "codigo_postal": "29112",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-27T14:22:08Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "16976c080717373b819a068f"
+    },
+    "nombre": "Michael",
+    "apellido": "Williams",
+    "email": "michael.williams@x.dummyjson.com",
+    "telefono": "+49 258-627-6644",
+    "fecha_nacimiento": {
+      "$date": "1989-08-10T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "385 Fifth Street",
+      "ciudad": "Houston",
+      "estado": "Alabama",
+      "codigo_postal": "38807",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-03T10:36:08Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b7a6b38b6b38729647cfde01"
+    },
+    "nombre": "Sophia",
+    "apellido": "Brown",
+    "email": "sophia.brown@x.dummyjson.com",
+    "telefono": "+81 210-652-2785",
+    "fecha_nacimiento": {
+      "$date": "1982-11-06T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1642 Ninth Street",
+      "ciudad": "Washington",
+      "estado": "Alabama",
+      "codigo_postal": "32822",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-12T09:11:40Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ce28b26c57472737f5c3561a"
+    },
+    "nombre": "James",
+    "apellido": "Davis",
+    "email": "james.davis@x.dummyjson.com",
+    "telefono": "+49 614-958-9364",
+    "fecha_nacimiento": {
+      "$date": "1979-05-04T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "238 Jefferson Street",
+      "ciudad": "Seattle",
+      "estado": "Pennsylvania",
+      "codigo_postal": "68354",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-13T00:54:28Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "61185bd8589a43ce0bba7589"
+    },
+    "nombre": "Emma",
+    "apellido": "Miller",
+    "email": "emma.miller@x.dummyjson.com",
+    "telefono": "+91 759-776-1614",
+    "fecha_nacimiento": {
+      "$date": "1994-06-13T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "607 Fourth Street",
+      "ciudad": "Jacksonville",
+      "estado": "Colorado",
+      "codigo_postal": "26593",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-06T22:55:41Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f9ec60148d4bd4a09ee2dc5c"
+    },
+    "nombre": "Olivia",
+    "apellido": "Wilson",
+    "email": "olivia.wilson@x.dummyjson.com",
+    "telefono": "+91 607-295-6448",
+    "fecha_nacimiento": {
+      "$date": "2002-04-20T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "547 First Street",
+      "ciudad": "Fort Worth",
+      "estado": "Tennessee",
+      "codigo_postal": "83843",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-24T10:37:26Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "31b4110ba93ac54afc14da3b"
+    },
+    "nombre": "Alexander",
+    "apellido": "Jones",
+    "email": "alexander.jones@x.dummyjson.com",
+    "telefono": "+61 260-824-4986",
+    "fecha_nacimiento": {
+      "$date": "1986-10-20T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "664 Maple Street",
+      "ciudad": "Indianapolis",
+      "estado": "Delaware",
+      "codigo_postal": "86684",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-19T10:48:11Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "614774a2d55d295e5a35ab44"
+    },
+    "nombre": "Ava",
+    "apellido": "Taylor",
+    "email": "ava.taylor@x.dummyjson.com",
+    "telefono": "+1 458-853-7877",
+    "fecha_nacimiento": {
+      "$date": "1997-08-25T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1197 First Street",
+      "ciudad": "Fort Worth",
+      "estado": "Rhode Island",
+      "codigo_postal": "24771",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-29T02:52:43Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "efaea5129ba22b88ba3e2976"
+    },
+    "nombre": "Ethan",
+    "apellido": "Martinez",
+    "email": "ethan.martinez@x.dummyjson.com",
+    "telefono": "+92 933-608-5081",
+    "fecha_nacimiento": {
+      "$date": "1991-02-12T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "466 Pine Street",
+      "ciudad": "San Antonio",
+      "estado": "Louisiana",
+      "codigo_postal": "72360",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-21T17:33:43Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "45fdeca3b08e38af53d7c4c6"
+    },
+    "nombre": "Isabella",
+    "apellido": "Anderson",
+    "email": "isabella.anderson@x.dummyjson.com",
+    "telefono": "+49 770-658-4885",
+    "fecha_nacimiento": {
+      "$date": "1993-06-10T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1964 Oak Street",
+      "ciudad": "New York",
+      "estado": "Utah",
+      "codigo_postal": "89352",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-02-13T10:45:32Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3ad208ce5066441036e9f191"
+    },
+    "nombre": "Liam",
+    "apellido": "Garcia",
+    "email": "liam.garcia@x.dummyjson.com",
+    "telefono": "+92 870-217-6201",
+    "fecha_nacimiento": {
+      "$date": "1995-06-06T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "576 Fifth Street",
+      "ciudad": "Denver",
+      "estado": "South Dakota",
+      "codigo_postal": "57252",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-07-11T14:53:31Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5036a77f65e2eaa475244323"
+    },
+    "nombre": "Mia",
+    "apellido": "Rodriguez",
+    "email": "mia.rodriguez@x.dummyjson.com",
+    "telefono": "+49 989-461-8403",
+    "fecha_nacimiento": {
+      "$date": "2000-08-04T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1627 Sixth Street",
+      "ciudad": "Jacksonville",
+      "estado": "West Virginia",
+      "codigo_postal": "41810",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-10T13:28:11Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "be8f8943bf956de595665c38"
+    },
+    "nombre": "Noah",
+    "apellido": "Hernandez",
+    "email": "noah.hernandez@x.dummyjson.com",
+    "telefono": "+49 393-605-6968",
+    "fecha_nacimiento": {
+      "$date": "1984-06-05T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1413 Maple Street",
+      "ciudad": "New York",
+      "estado": "North Dakota",
+      "codigo_postal": "73696",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-17T10:41:26Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "827e17c10cdc1c27a028caae"
+    },
+    "nombre": "Charlotte",
+    "apellido": "Lopez",
+    "email": "charlotte.lopez@x.dummyjson.com",
+    "telefono": "+44 373-953-5028",
+    "fecha_nacimiento": {
+      "$date": "1988-06-08T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "208 Second Street",
+      "ciudad": "Columbus",
+      "estado": "Ohio",
+      "codigo_postal": "42044",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-23T21:37:55Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9810626198ff778740f88ddc"
+    },
+    "nombre": "William",
+    "apellido": "Gonzalez",
+    "email": "william.gonzalez@x.dummyjson.com",
+    "telefono": "+81 905-252-7319",
+    "fecha_nacimiento": {
+      "$date": "1992-03-27T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "31 Maple Street",
+      "ciudad": "San Jose",
+      "estado": "Utah",
+      "codigo_postal": "78243",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-09T22:01:18Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "aeb81daee289c044c4a4571c"
+    },
+    "nombre": "Avery",
+    "apellido": "Perez",
+    "email": "avery.perez@x.dummyjson.com",
+    "telefono": "+61 731-431-3457",
+    "fecha_nacimiento": {
+      "$date": "1999-03-10T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1125 First Street",
+      "ciudad": "Columbus",
+      "estado": "Iowa",
+      "codigo_postal": "30973",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-15T23:14:20Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6f287400f4b8e0b843f880c3"
+    },
+    "nombre": "Evelyn",
+    "apellido": "Sanchez",
+    "email": "evelyn.sanchez@x.dummyjson.com",
+    "telefono": "+1 623-880-6871",
+    "fecha_nacimiento": {
+      "$date": "1987-10-13T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1170 Lincoln Street",
+      "ciudad": "San Diego",
+      "estado": "Wyoming",
+      "codigo_postal": "43423",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-18T18:18:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "81e91bdea04cd7a3819b3227"
+    },
+    "nombre": "Logan",
+    "apellido": "Torres",
+    "email": "logan.torres@x.dummyjson.com",
+    "telefono": "+81 507-434-8733",
+    "fecha_nacimiento": {
+      "$date": "1993-10-26T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "907 Seventh Street",
+      "ciudad": "Columbus",
+      "estado": "Arkansas",
+      "codigo_postal": "78805",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-17T10:15:33Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c3298af4c7ec87eb0099527d"
+    },
+    "nombre": "Abigail",
+    "apellido": "Rivera",
+    "email": "abigail.rivera@x.dummyjson.com",
+    "telefono": "+91 228-363-7806",
+    "fecha_nacimiento": {
+      "$date": "1996-10-11T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "996 Oak Street",
+      "ciudad": "Chicago",
+      "estado": "New Mexico",
+      "codigo_postal": "11407",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-16T03:04:22Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1ced5ce0fcd4ce4e3d0e3de0"
+    },
+    "nombre": "Jackson",
+    "apellido": "Evans",
+    "email": "jackson.evans@x.dummyjson.com",
+    "telefono": "+44 468-628-6686",
+    "fecha_nacimiento": {
+      "$date": "1990-11-30T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1873 Main Street",
+      "ciudad": "New York",
+      "estado": "Arkansas",
+      "codigo_postal": "26600",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-16T16:17:59Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f21415bb7cd011fac288c420"
+    },
+    "nombre": "Madison",
+    "apellido": "Collins",
+    "email": "madison.collins@x.dummyjson.com",
+    "telefono": "+81 259-957-5711",
+    "fecha_nacimiento": {
+      "$date": "1998-03-07T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1892 Lincoln Street",
+      "ciudad": "Philadelphia",
+      "estado": "New Jersey",
+      "codigo_postal": "62091",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-09T17:23:25Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a879f28c2a4387df9b6cf636"
+    },
+    "nombre": "Elijah",
+    "apellido": "Stewart",
+    "email": "elijah.stewart@x.dummyjson.com",
+    "telefono": "+44 468-357-7872",
+    "fecha_nacimiento": {
+      "$date": "1991-10-22T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1701 Eighth Street",
+      "ciudad": "Columbus",
+      "estado": "Illinois",
+      "codigo_postal": "31585",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-22T21:12:27Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c1bab033b64f66feaba65f70"
+    },
+    "nombre": "Chloe",
+    "apellido": "Morales",
+    "email": "chloe.morales@x.dummyjson.com",
+    "telefono": "+92 468-541-7133",
+    "fecha_nacimiento": {
+      "$date": "1985-04-21T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "401 Fourth Street",
+      "ciudad": "Dallas",
+      "estado": "New Jersey",
+      "codigo_postal": "54972",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-06T00:18:46Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "731e3f39105605968d3a9638"
+    },
+    "nombre": "Mateo",
+    "apellido": "Nguyen",
+    "email": "mateo.nguyen@x.dummyjson.com",
+    "telefono": "+1 341-597-6694",
+    "fecha_nacimiento": {
+      "$date": "1994-06-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1578 Fourth Street",
+      "ciudad": "Columbus",
+      "estado": "Missouri",
+      "codigo_postal": "20673",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-06T14:02:49Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "12b5a10f3a11e708dc541283"
+    },
+    "nombre": "Harper",
+    "apellido": "Kelly",
+    "email": "harper.kelly@x.dummyjson.com",
+    "telefono": "+92 518-863-2863",
+    "fecha_nacimiento": {
+      "$date": "1997-03-03T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1591 Adams Street",
+      "ciudad": "Philadelphia",
+      "estado": "New York",
+      "codigo_postal": "69521",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-03T20:43:40Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "47ab7c368a21b9efe1929379"
+    },
+    "nombre": "Evelyn",
+    "apellido": "Gonzalez",
+    "email": "evelyn.gonzalez@x.dummyjson.com",
+    "telefono": "+61 708-508-4638",
+    "fecha_nacimiento": {
+      "$date": "1989-02-05T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1065 Lincoln Street",
+      "ciudad": "Dallas",
+      "estado": "Maine",
+      "codigo_postal": "84898",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-07T17:47:48Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c879ce68301818a86e5a6c69"
+    },
+    "nombre": "Daniel",
+    "apellido": "Cook",
+    "email": "daniel.cook@x.dummyjson.com",
+    "telefono": "+44 254-761-6843",
+    "fecha_nacimiento": {
+      "$date": "1983-12-25T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1163 Pine Street",
+      "ciudad": "Los Angeles",
+      "estado": "Nevada",
+      "codigo_postal": "58781",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-28T17:58:14Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ddba0daca7fba5190f67ba56"
+    },
+    "nombre": "Lily",
+    "apellido": "Lee",
+    "email": "lily.lee@x.dummyjson.com",
+    "telefono": "+1 808-757-9867",
+    "fecha_nacimiento": {
+      "$date": "1995-12-03T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1946 Oak Street",
+      "ciudad": "Phoenix",
+      "estado": "Massachusetts",
+      "codigo_postal": "41540",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-13T20:07:33Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dc1b3f31308972236c2e4776"
+    },
+    "nombre": "Henry",
+    "apellido": "Hill",
+    "email": "henry.hill@x.dummyjson.com",
+    "telefono": "+1 240-833-4680",
+    "fecha_nacimiento": {
+      "$date": "1986-08-19T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1837 Maple Street",
+      "ciudad": "Indianapolis",
+      "estado": "Delaware",
+      "codigo_postal": "81783",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-13T00:43:46Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dfec1371cedcdb8c190ca6ff"
+    },
+    "nombre": "Addison",
+    "apellido": "Wright",
+    "email": "addison.wright@x.dummyjson.com",
+    "telefono": "+1 514-384-3300",
+    "fecha_nacimiento": {
+      "$date": "1992-01-03T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "568 Tenth Street",
+      "ciudad": "San Francisco",
+      "estado": "Montana",
+      "codigo_postal": "54698",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-23T21:17:22Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d603f817edc0d93c2a687c7b"
+    },
+    "nombre": "Gabriel",
+    "apellido": "Adams",
+    "email": "gabriel.adams@x.dummyjson.com",
+    "telefono": "+91 936-400-4116",
+    "fecha_nacimiento": {
+      "$date": "1988-09-05T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1814 Cedar Street",
+      "ciudad": "Charlotte",
+      "estado": "Indiana",
+      "codigo_postal": "21191",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-15T00:32:18Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dd66e70f2a6100fc6343edc8"
+    },
+    "nombre": "Natalie",
+    "apellido": "Harris",
+    "email": "natalie.harris@x.dummyjson.com",
+    "telefono": "+49 584-501-9302",
+    "fecha_nacimiento": {
+      "$date": "1996-07-23T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "356 Pine Street",
+      "ciudad": "San Jose",
+      "estado": "Mississippi",
+      "codigo_postal": "31121",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-01T19:52:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "74496cb2f5bbfec88ea9b77c"
+    },
+    "nombre": "Carter",
+    "apellido": "Baker",
+    "email": "carter.baker@x.dummyjson.com",
+    "telefono": "+49 787-512-9117",
+    "fecha_nacimiento": {
+      "$date": "1993-04-19T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "625 Third Street",
+      "ciudad": "Denver",
+      "estado": "Oregon",
+      "codigo_postal": "74622",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-30T05:37:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "304b37f70e94bc8a0fbf500e"
+    },
+    "nombre": "Sofia",
+    "apellido": "Mitchell",
+    "email": "sofia.mitchell@x.dummyjson.com",
+    "telefono": "+92 957-686-6804",
+    "fecha_nacimiento": {
+      "$date": "1999-11-18T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "21 Cedar Street",
+      "ciudad": "San Francisco",
+      "estado": "Oregon",
+      "codigo_postal": "42411",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-02-08T22:43:15Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "957a80ebda87280ef58214d9"
+    },
+    "nombre": "Jack",
+    "apellido": "Ward",
+    "email": "jack.ward@x.dummyjson.com",
+    "telefono": "+91 857-765-4373",
+    "fecha_nacimiento": {
+      "$date": "1995-09-23T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "164 Elm Street",
+      "ciudad": "Phoenix",
+      "estado": "Idaho",
+      "codigo_postal": "42061",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-24T08:01:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "119811acdc3c671ef1e3913f"
+    },
+    "nombre": "Harper",
+    "apellido": "Turner",
+    "email": "harper.turner@x.dummyjson.com",
+    "telefono": "+49 980-340-5333",
+    "fecha_nacimiento": {
+      "$date": "1991-01-14T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1964 Fifth Street",
+      "ciudad": "Dallas",
+      "estado": "Utah",
+      "codigo_postal": "63361",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-25T15:50:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "980a9e146ba895908550ef42"
+    },
+    "nombre": "Mason",
+    "apellido": "Parker",
+    "email": "mason.parker@x.dummyjson.com",
+    "telefono": "+61 837-389-4095",
+    "fecha_nacimiento": {
+      "$date": "1990-04-20T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "419 Elm Street",
+      "ciudad": "Seattle",
+      "estado": "Louisiana",
+      "codigo_postal": "20540",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-07T15:40:02Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "abb7503d436521aba54c7550"
+    },
+    "nombre": "Aria",
+    "apellido": "Roberts",
+    "email": "aria.roberts@x.dummyjson.com",
+    "telefono": "+61 411-514-5320",
+    "fecha_nacimiento": {
+      "$date": "1998-03-25T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "560 Fifth Street",
+      "ciudad": "Seattle",
+      "estado": "Rhode Island",
+      "codigo_postal": "70664",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-06T23:46:11Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ef1202759fff90ff19128936"
+    },
+    "nombre": "Lucas",
+    "apellido": "Gray",
+    "email": "lucas.gray@x.dummyjson.com",
+    "telefono": "+44 687-435-7119",
+    "fecha_nacimiento": {
+      "$date": "1994-04-06T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "590 Lincoln Street",
+      "ciudad": "Houston",
+      "estado": "Wisconsin",
+      "codigo_postal": "12506",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-27T22:22:27Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4321ee59e111e13e5e482870"
+    },
+    "nombre": "Ella",
+    "apellido": "Adams",
+    "email": "ella.adams@x.dummyjson.com",
+    "telefono": "+1 450-865-6061",
+    "fecha_nacimiento": {
+      "$date": "1997-06-20T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1420 First Street",
+      "ciudad": "Washington",
+      "estado": "Utah",
+      "codigo_postal": "85475",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-09T14:07:56Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8bb44d9cfbfccea78702aad1"
+    },
+    "nombre": "Evan",
+    "apellido": "Reed",
+    "email": "evan.reed@x.dummyjson.com",
+    "telefono": "+61 932-569-4853",
+    "fecha_nacimiento": {
+      "$date": "1992-06-16T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "98 Tenth Street",
+      "ciudad": "San Antonio",
+      "estado": "North Carolina",
+      "codigo_postal": "19937",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-06T18:32:09Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4ceea91af0e022431de31bbe"
+    },
+    "nombre": "Avery",
+    "apellido": "Carter",
+    "email": "avery.carter@x.dummyjson.com",
+    "telefono": "+44 254-655-6112",
+    "fecha_nacimiento": {
+      "$date": "1996-08-21T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1999 Seventh Street",
+      "ciudad": "San Diego",
+      "estado": "West Virginia",
+      "codigo_postal": "13916",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-05T16:50:10Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2745489a35b75734afa2da43"
+    },
+    "nombre": "Benjamin",
+    "apellido": "Foster",
+    "email": "benjamin.foster@x.dummyjson.com",
+    "telefono": "+61 333-911-3476",
+    "fecha_nacimiento": {
+      "$date": "1990-11-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "25 Sixth Street",
+      "ciudad": "San Diego",
+      "estado": "Delaware",
+      "codigo_postal": "48884",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-27T13:30:27Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7d40e7e8d80d17a26cd4460b"
+    },
+    "nombre": "Scarlett",
+    "apellido": "Wright",
+    "email": "scarlett.wright@x.dummyjson.com",
+    "telefono": "+1 599-432-3048",
+    "fecha_nacimiento": {
+      "$date": "1998-05-09T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1276 Cedar Street",
+      "ciudad": "Phoenix",
+      "estado": "Vermont",
+      "codigo_postal": "32823",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-03T18:05:47Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "55c521a3fa4329bd718db46d"
+    },
+    "nombre": "Lincoln",
+    "apellido": "Kelly",
+    "email": "lincoln.kelly@x.dummyjson.com",
+    "telefono": "+49 680-666-9673",
+    "fecha_nacimiento": {
+      "$date": "1994-01-12T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "108 Adams Street",
+      "ciudad": "Columbus",
+      "estado": "Montana",
+      "codigo_postal": "51083",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-11T16:03:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "021c13f1e2b0e7268b09d55e"
+    },
+    "nombre": "Hannah",
+    "apellido": "Robinson",
+    "email": "hannah.robinson@x.dummyjson.com",
+    "telefono": "+92 556-625-4398",
+    "fecha_nacimiento": {
+      "$date": "1995-02-02T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "666 Fourth Street",
+      "ciudad": "Phoenix",
+      "estado": "West Virginia",
+      "codigo_postal": "82463",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-28T10:45:55Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8d256e200a4e5de6eecbf8dc"
+    },
+    "nombre": "Nicholas",
+    "apellido": "Bailey",
+    "email": "nicholas.bailey@x.dummyjson.com",
+    "telefono": "+49 212-856-4272",
+    "fecha_nacimiento": {
+      "$date": "1989-06-14T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "55 Madison Street",
+      "ciudad": "Chicago",
+      "estado": "Rhode Island",
+      "codigo_postal": "58331",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-31T23:41:39Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e65b35ae3faa1a5ac78fe2df"
+    },
+    "nombre": "Luna",
+    "apellido": "Russell",
+    "email": "luna.russell@x.dummyjson.com",
+    "telefono": "+91 730-486-3735",
+    "fecha_nacimiento": {
+      "$date": "1997-06-18T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "968 Elm Street",
+      "ciudad": "San Diego",
+      "estado": "Colorado",
+      "codigo_postal": "64610",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-11T15:25:24Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f99ebf27ecee3cdd29f9cccf"
+    },
+    "nombre": "Jacob",
+    "apellido": "Cooper",
+    "email": "jacob.cooper@x.dummyjson.com",
+    "telefono": "+91 322-775-7582",
+    "fecha_nacimiento": {
+      "$date": "1993-12-21T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1419 Pine Street",
+      "ciudad": "Columbus",
+      "estado": "Montana",
+      "codigo_postal": "61227",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-17T12:29:43Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e169062dbcec55c8ee69cdab"
+    },
+    "nombre": "Stella",
+    "apellido": "Hughes",
+    "email": "stella.hughes@x.dummyjson.com",
+    "telefono": "+92 378-326-3439",
+    "fecha_nacimiento": {
+      "$date": "1991-11-06T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "926 Elm Street",
+      "ciudad": "Jacksonville",
+      "estado": "New Hampshire",
+      "codigo_postal": "24463",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-07-24T22:27:56Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cf3f4428c9b31b61df09db78"
+    },
+    "nombre": "Eli",
+    "apellido": "Bennett",
+    "email": "eli.bennett@x.dummyjson.com",
+    "telefono": "+1 465-379-7226",
+    "fecha_nacimiento": {
+      "$date": "1995-09-17T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1423 Main Street",
+      "ciudad": "Jacksonville",
+      "estado": "Idaho",
+      "codigo_postal": "34271",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-21T18:27:54Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "33d1eb75594ed2cbdf3a3906"
+    },
+    "nombre": "Grace",
+    "apellido": "Perry",
+    "email": "grace.perry@x.dummyjson.com",
+    "telefono": "+49 550-430-8269",
+    "fecha_nacimiento": {
+      "$date": "1998-12-23T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1957 Cedar Street",
+      "ciudad": "Seattle",
+      "estado": "Pennsylvania",
+      "codigo_postal": "61720",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-27T15:54:37Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "31665447dd11f7c54759a482"
+    },
+    "nombre": "Lucas",
+    "apellido": "Gordon",
+    "email": "lucas.gordon@x.dummyjson.com",
+    "telefono": "+81 367-320-4960",
+    "fecha_nacimiento": {
+      "$date": "1989-09-11T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1386 Third Street",
+      "ciudad": "Los Angeles",
+      "estado": "Rhode Island",
+      "codigo_postal": "37169",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-06T10:32:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "adfbd78954f0071de0f8422d"
+    },
+    "nombre": "Ava",
+    "apellido": "Harrison",
+    "email": "ava.harrison@x.dummyjson.com",
+    "telefono": "+44 926-778-4653",
+    "fecha_nacimiento": {
+      "$date": "1996-04-22T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1094 Adams Street",
+      "ciudad": "San Antonio",
+      "estado": "Vermont",
+      "codigo_postal": "14336",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-26T22:58:37Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f6fb43091b986f58bac9506f"
+    },
+    "nombre": "Owen",
+    "apellido": "Fisher",
+    "email": "owen.fisher@x.dummyjson.com",
+    "telefono": "+49 328-635-8057",
+    "fecha_nacimiento": {
+      "$date": "1993-06-26T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1486 Second Street",
+      "ciudad": "Chicago",
+      "estado": "Nevada",
+      "codigo_postal": "54304",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-04-15T20:33:07Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fb821d62e69330410bb56f00"
+    },
+    "nombre": "Samantha",
+    "apellido": "Howard",
+    "email": "samantha.howard@x.dummyjson.com",
+    "telefono": "+91 458-289-9756",
+    "fecha_nacimiento": {
+      "$date": "1994-06-17T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1506 Jefferson Street",
+      "ciudad": "Austin",
+      "estado": "Alaska",
+      "codigo_postal": "20118",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-07T20:01:03Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ecce89afb8f0bdbcab325d6e"
+    },
+    "nombre": "Nathan",
+    "apellido": "Dixon",
+    "email": "nathan.dixon@x.dummyjson.com",
+    "telefono": "+44 540-488-4436",
+    "fecha_nacimiento": {
+      "$date": "1990-11-10T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1795 Seventh Street",
+      "ciudad": "Columbus",
+      "estado": "Utah",
+      "codigo_postal": "20882",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-02-24T08:24:22Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f2aaeb549f50a9d91fb8e64c"
+    },
+    "nombre": "Bella",
+    "apellido": "Grant",
+    "email": "bella.grant@x.dummyjson.com",
+    "telefono": "+92 896-206-1901",
+    "fecha_nacimiento": {
+      "$date": "1997-03-15T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "447 Ninth Street",
+      "ciudad": "Dallas",
+      "estado": "Mississippi",
+      "codigo_postal": "40138",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-28T21:26:55Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4faa685367b24b8d20316baa"
+    },
+    "nombre": "Ethan",
+    "apellido": "Fletcher",
+    "email": "ethan.fletcher@x.dummyjson.com",
+    "telefono": "+1 251-564-2643",
+    "fecha_nacimiento": {
+      "$date": "1991-05-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "789 Main Street",
+      "ciudad": "Dallas",
+      "estado": "Arkansas",
+      "codigo_postal": "87924",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-21T11:46:48Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "adbfe72c9d914d678cd5004d"
+    },
+    "nombre": "Lillian",
+    "apellido": "Simmons",
+    "email": "lillian.simmons@x.dummyjson.com",
+    "telefono": "+61 857-625-2029",
+    "fecha_nacimiento": {
+      "$date": "1992-03-09T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1577 Seventh Street",
+      "ciudad": "Phoenix",
+      "estado": "Minnesota",
+      "codigo_postal": "47571",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-10T20:27:33Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "356ec9949ba752777171ac36"
+    },
+    "nombre": "Mason",
+    "apellido": "Pearson",
+    "email": "mason.pearson@x.dummyjson.com",
+    "telefono": "+1 394-401-1757",
+    "fecha_nacimiento": {
+      "$date": "1996-05-09T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "14 Main Street",
+      "ciudad": "Phoenix",
+      "estado": "Idaho",
+      "codigo_postal": "82481",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-01T00:58:26Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "79cbe6f5cbbc2ba8154883a9"
+    },
+    "nombre": "Leah",
+    "apellido": "Henderson",
+    "email": "leah.henderson@x.dummyjson.com",
+    "telefono": "+91 453-220-4258",
+    "fecha_nacimiento": {
+      "$date": "1998-08-19T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "554 Seventh Street",
+      "ciudad": "Austin",
+      "estado": "Wyoming",
+      "codigo_postal": "42884",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-06T14:52:21Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9e5517d1f3c03cac4f39ce32"
+    },
+    "nombre": "Logan",
+    "apellido": "Lawson",
+    "email": "logan.lawson@x.dummyjson.com",
+    "telefono": "+1 750-526-9455",
+    "fecha_nacimiento": {
+      "$date": "1991-08-05T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1110 Fifth Street",
+      "ciudad": "Chicago",
+      "estado": "Minnesota",
+      "codigo_postal": "10672",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-24T10:52:37Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "060b3efb799cd9c412746ae2"
+    },
+    "nombre": "Avery",
+    "apellido": "Barnes",
+    "email": "avery.barnes@x.dummyjson.com",
+    "telefono": "+91 207-801-7417",
+    "fecha_nacimiento": {
+      "$date": "1995-02-05T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "466 Sixth Street",
+      "ciudad": "Philadelphia",
+      "estado": "Connecticut",
+      "codigo_postal": "61359",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-04T03:40:39Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9331b7b2627e663e25a7b001"
+    },
+    "nombre": "Caleb",
+    "apellido": "Perkins",
+    "email": "caleb.perkins@x.dummyjson.com",
+    "telefono": "+81 351-413-9369",
+    "fecha_nacimiento": {
+      "$date": "1994-07-28T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1078 Sixth Street",
+      "ciudad": "Los Angeles",
+      "estado": "South Carolina",
+      "codigo_postal": "12319",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-06T06:59:32Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dcc5e21bc76c382dcdf5b284"
+    },
+    "nombre": "Aria",
+    "apellido": "Ferguson",
+    "email": "aria.ferguson@x.dummyjson.com",
+    "telefono": "+44 434-406-8551",
+    "fecha_nacimiento": {
+      "$date": "1997-06-01T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1553 Sixth Street",
+      "ciudad": "San Diego",
+      "estado": "Wyoming",
+      "codigo_postal": "59501",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-26T19:50:15Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0c8e3fead91f7422cd76aa87"
+    },
+    "nombre": "Gabriel",
+    "apellido": "Hayes",
+    "email": "gabriel.hayes@x.dummyjson.com",
+    "telefono": "+61 386-511-8949",
+    "fecha_nacimiento": {
+      "$date": "1990-04-08T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "240 Jefferson Street",
+      "ciudad": "San Jose",
+      "estado": "Minnesota",
+      "codigo_postal": "63269",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-10T03:07:21Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9851f3c1e4719cd0b8e4816d"
+    },
+    "nombre": "Layla",
+    "apellido": "Sullivan",
+    "email": "layla.sullivan@x.dummyjson.com",
+    "telefono": "+92 657-388-7474",
+    "fecha_nacimiento": {
+      "$date": "1999-10-03T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "639 Fourth Street",
+      "ciudad": "Denver",
+      "estado": "Arizona",
+      "codigo_postal": "56891",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-07T02:55:53Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e88c72e528bedc797342c03f"
+    },
+    "nombre": "Christopher",
+    "apellido": "West",
+    "email": "christopher.west@x.dummyjson.com",
+    "telefono": "+49 968-571-2475",
+    "fecha_nacimiento": {
+      "$date": "1993-11-16T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1656 Eighth Street",
+      "ciudad": "Denver",
+      "estado": "Pennsylvania",
+      "codigo_postal": "63011",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-14T08:10:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a346c4c7857ca03d467013b6"
+    },
+    "nombre": "Zoe",
+    "apellido": "Nicholson",
+    "email": "zoe.nicholson@x.dummyjson.com",
+    "telefono": "+49 638-976-6904",
+    "fecha_nacimiento": {
+      "$date": "1992-12-24T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1705 Pine Street",
+      "ciudad": "Jacksonville",
+      "estado": "Kansas",
+      "codigo_postal": "39449",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-09T22:21:31Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3c455551e48a1423263b62b1"
+    },
+    "nombre": "Nolan",
+    "apellido": "Bryant",
+    "email": "nolan.bryant@x.dummyjson.com",
+    "telefono": "+44 618-916-5243",
+    "fecha_nacimiento": {
+      "$date": "1995-12-07T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "236 Lincoln Street",
+      "ciudad": "Jacksonville",
+      "estado": "Nevada",
+      "codigo_postal": "56830",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-28T16:29:47Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b436106a68548a776a0f34d5"
+    },
+    "nombre": "Victoria",
+    "apellido": "McDonald",
+    "email": "victoria.mcdonald@x.dummyjson.com",
+    "telefono": "+91 624-944-2089",
+    "fecha_nacimiento": {
+      "$date": "1997-09-16T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "244 Second Street",
+      "ciudad": "Austin",
+      "estado": "Missouri",
+      "codigo_postal": "39608",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-22T08:02:34Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "63e7c595f2b205dbe1c39361"
+    },
+    "nombre": "Max",
+    "apellido": "Russell",
+    "email": "max.russell@x.dummyjson.com",
+    "telefono": "+44 663-850-4302",
+    "fecha_nacimiento": {
+      "$date": "1990-04-19T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1813 Ninth Street",
+      "ciudad": "Chicago",
+      "estado": "Oklahoma",
+      "codigo_postal": "46278",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-05T11:32:48Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "01f15a4cc063dae4f4d56b89"
+    },
+    "nombre": "Penelope",
+    "apellido": "Harper",
+    "email": "penelope.harper@x.dummyjson.com",
+    "telefono": "+44 907-679-1302",
+    "fecha_nacimiento": {
+      "$date": "1996-09-14T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "571 Washington Street",
+      "ciudad": "Charlotte",
+      "estado": "Pennsylvania",
+      "codigo_postal": "26857",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-03T14:42:07Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bc8bcc9ae5387c38456f7c07"
+    },
+    "nombre": "Ryan",
+    "apellido": "Graham",
+    "email": "ryan.graham@x.dummyjson.com",
+    "telefono": "+92 260-518-7256",
+    "fecha_nacimiento": {
+      "$date": "1993-10-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1858 Madison Street",
+      "ciudad": "San Antonio",
+      "estado": "Tennessee",
+      "codigo_postal": "44329",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-29T00:49:25Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "56abadcc67b92ad777eb20fb"
+    },
+    "nombre": "Madeline",
+    "apellido": "Simpson",
+    "email": "madeline.simpson@x.dummyjson.com",
+    "telefono": "+44 371-964-4017",
+    "fecha_nacimiento": {
+      "$date": "1998-12-01T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1466 Oak Street",
+      "ciudad": "Los Angeles",
+      "estado": "New Jersey",
+      "codigo_postal": "29730",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-04-28T07:42:37Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8806e8649790a90615a46d22"
+    },
+    "nombre": "Jonathan",
+    "apellido": "Pierce",
+    "email": "jonathan.pierce@x.dummyjson.com",
+    "telefono": "+61 456-307-5568",
+    "fecha_nacimiento": {
+      "$date": "1991-09-25T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1110 Seventh Street",
+      "ciudad": "San Diego",
+      "estado": "Ohio",
+      "codigo_postal": "34379",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-24T14:40:58Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2e0c42615336745356c2e161"
+    },
+    "nombre": "Eleanor",
+    "apellido": "Tyler",
+    "email": "eleanor.tyler@x.dummyjson.com",
+    "telefono": "+1 232-621-9938",
+    "fecha_nacimiento": {
+      "$date": "1994-10-26T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "439 Pine Street",
+      "ciudad": "San Antonio",
+      "estado": "New Hampshire",
+      "codigo_postal": "64622",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-04T03:04:45Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c0f3d46b40d5147804bf8a0d"
+    },
+    "nombre": "Isaac",
+    "apellido": "Lawrence",
+    "email": "isaac.lawrence@x.dummyjson.com",
+    "telefono": "+81 693-260-7234",
+    "fecha_nacimiento": {
+      "$date": "1992-01-06T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1581 Oak Street",
+      "ciudad": "Austin",
+      "estado": "North Dakota",
+      "codigo_postal": "62609",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-28T19:44:01Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "39a611c7f5a60ac107f33f33"
+    },
+    "nombre": "Hazel",
+    "apellido": "Gardner",
+    "email": "hazel.gardner@x.dummyjson.com",
+    "telefono": "+91 688-478-9459",
+    "fecha_nacimiento": {
+      "$date": "1997-09-18T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "756 Washington Street",
+      "ciudad": "New York",
+      "estado": "Kentucky",
+      "codigo_postal": "35181",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-13T20:21:34Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "059f273d2079ab1d90f23777"
+    },
+    "nombre": "Austin",
+    "apellido": "Hudson",
+    "email": "austin.hudson@x.dummyjson.com",
+    "telefono": "+81 405-412-4250",
+    "fecha_nacimiento": {
+      "$date": "1995-05-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1468 Eighth Street",
+      "ciudad": "Los Angeles",
+      "estado": "Maryland",
+      "codigo_postal": "64305",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-27T06:58:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "41c45e2a9b9bf6bfb71dc7d1"
+    },
+    "nombre": "Lillian",
+    "apellido": "Bishop",
+    "email": "lillian.bishop@x.dummyjson.com",
+    "telefono": "+92 538-589-5885",
+    "fecha_nacimiento": {
+      "$date": "1998-08-02T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1959 Lincoln Street",
+      "ciudad": "Jacksonville",
+      "estado": "Minnesota",
+      "codigo_postal": "79154",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-07T04:48:57Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f64f1b9406ed4f93ade8f560"
+    },
+    "nombre": "Dylan",
+    "apellido": "Wells",
+    "email": "dylan.wells@x.dummyjson.com",
+    "telefono": "+49 659-638-1106",
+    "fecha_nacimiento": {
+      "$date": "1990-11-07T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "816 Sixth Street",
+      "ciudad": "Philadelphia",
+      "estado": "West Virginia",
+      "codigo_postal": "54522",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-04T02:10:28Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f1b7321397b0d4a03e1ab2c5"
+    },
+    "nombre": "Aaliyah",
+    "apellido": "Hanson",
+    "email": "aaliyah.hanson@x.dummyjson.com",
+    "telefono": "+1 275-501-1119",
+    "fecha_nacimiento": {
+      "$date": "1996-03-20T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "790 Eighth Street",
+      "ciudad": "Philadelphia",
+      "estado": "North Dakota",
+      "codigo_postal": "51438",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-22T05:54:31Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d9af99ce1ecbfb90c80a5888"
+    },
+    "nombre": "Cameron",
+    "apellido": "Burke",
+    "email": "cameron.burke@x.dummyjson.com",
+    "telefono": "+1 976-686-7996",
+    "fecha_nacimiento": {
+      "$date": "1993-02-28T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1192 Adams Street",
+      "ciudad": "Denver",
+      "estado": "South Dakota",
+      "codigo_postal": "32940",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-28T17:32:41Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a95e1181a55703d96bd27d1b"
+    },
+    "nombre": "Nora",
+    "apellido": "Mills",
+    "email": "nora.mills@x.dummyjson.com",
+    "telefono": "+44 767-262-6860",
+    "fecha_nacimiento": {
+      "$date": "1998-09-18T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "940 Oak Street",
+      "ciudad": "San Jose",
+      "estado": "Kansas",
+      "codigo_postal": "51983",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-02T17:27:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f55ca2e4d475b5276f2dbb85"
+    },
+    "nombre": "Hunter",
+    "apellido": "Gordon",
+    "email": "hunter.gordon@x.dummyjson.com",
+    "telefono": "+1 986-988-5297",
+    "fecha_nacimiento": {
+      "$date": "1991-02-08T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "614 Third Street",
+      "ciudad": "Charlotte",
+      "estado": "Florida",
+      "codigo_postal": "77521",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-20T05:24:18Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "459dceeb89c67b776fd3bb97"
+    },
+    "nombre": "Aubrey",
+    "apellido": "Wagner",
+    "email": "aubrey.wagner@x.dummyjson.com",
+    "telefono": "+81 285-568-5834",
+    "fecha_nacimiento": {
+      "$date": "1994-04-01T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1147 Adams Street",
+      "ciudad": "Phoenix",
+      "estado": "North Carolina",
+      "codigo_postal": "72711",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-27T11:15:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "52da3ed4ef1647e1733ec076"
+    },
+    "nombre": "Brayden",
+    "apellido": "Fleming",
+    "email": "brayden.fleming@x.dummyjson.com",
+    "telefono": "+1 404-382-1778",
+    "fecha_nacimiento": {
+      "$date": "1992-07-20T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "328 Second Street",
+      "ciudad": "Jacksonville",
+      "estado": "Arkansas",
+      "codigo_postal": "30822",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-18T14:46:02Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9cab6156077ed9532e7c365a"
+    },
+    "nombre": "Scarlett",
+    "apellido": "Bowman",
+    "email": "scarlett.bowman@x.dummyjson.com",
+    "telefono": "+44 928-549-7517",
+    "fecha_nacimiento": {
+      "$date": "1997-02-26T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1108 Madison Street",
+      "ciudad": "New York",
+      "estado": "New Jersey",
+      "codigo_postal": "63825",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-11T16:40:23Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "425747e198b3e1468e0284f2"
+    },
+    "nombre": "Levi",
+    "apellido": "Hicks",
+    "email": "levi.hicks@x.dummyjson.com",
+    "telefono": "+92 931-753-3850",
+    "fecha_nacimiento": {
+      "$date": "1995-05-19T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1836 Pine Street",
+      "ciudad": "Phoenix",
+      "estado": "West Virginia",
+      "codigo_postal": "74747",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-28T09:32:59Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "153db8687d8ec23db079a5b6"
+    },
+    "nombre": "Autumn",
+    "apellido": "Gomez",
+    "email": "autumn.gomez@x.dummyjson.com",
+    "telefono": "+1 340-455-2897",
+    "fecha_nacimiento": {
+      "$date": "1998-02-01T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1585 Washington Street",
+      "ciudad": "Dallas",
+      "estado": "Illinois",
+      "codigo_postal": "53203",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-16T05:34:22Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "72ca04174b3867b13e4ea994"
+    },
+    "nombre": "Julian",
+    "apellido": "Newton",
+    "email": "julian.newton@x.dummyjson.com",
+    "telefono": "+92 865-328-8737",
+    "fecha_nacimiento": {
+      "$date": "1990-07-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "565 First Street",
+      "ciudad": "Fort Worth",
+      "estado": "Iowa",
+      "codigo_postal": "33623",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-13T15:02:23Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "798d87586cffbe8c545ab374"
+    },
+    "nombre": "Ruby",
+    "apellido": "Andrews",
+    "email": "ruby.andrews@x.dummyjson.com",
+    "telefono": "+1 343-203-7912",
+    "fecha_nacimiento": {
+      "$date": "1996-07-07T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "800 Adams Street",
+      "ciudad": "Dallas",
+      "estado": "Texas",
+      "codigo_postal": "85259",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-29T10:14:53Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4e403b1eb831501ebe89f3c3"
+    },
+    "nombre": "Miles",
+    "apellido": "Stevenson",
+    "email": "miles.stevenson@x.dummyjson.com",
+    "telefono": "+49 708-659-4394",
+    "fecha_nacimiento": {
+      "$date": "1993-03-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1778 Tenth Street",
+      "ciudad": "Charlotte",
+      "estado": "Montana",
+      "codigo_postal": "29192",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-20T01:34:52Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2f3137bd7b46b996fac28698"
+    },
+    "nombre": "Aurora",
+    "apellido": "Lawson",
+    "email": "aurora.lawson@x.dummyjson.com",
+    "telefono": "+92 802-452-4192",
+    "fecha_nacimiento": {
+      "$date": "1998-06-16T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1140 Adams Street",
+      "ciudad": "Dallas",
+      "estado": "Minnesota",
+      "codigo_postal": "29004",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-07T19:28:41Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fb19d5314b3a5c2d4d03b588"
+    },
+    "nombre": "Oscar",
+    "apellido": "Powers",
+    "email": "oscar.powers@x.dummyjson.com",
+    "telefono": "+61 929-572-1408",
+    "fecha_nacimiento": {
+      "$date": "1991-09-07T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1948 Jefferson Street",
+      "ciudad": "Charlotte",
+      "estado": "Vermont",
+      "codigo_postal": "12263",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-08T07:40:38Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "460bf90d8d4ab2f120a3dec0"
+    },
+    "nombre": "Clara",
+    "apellido": "Berry",
+    "email": "clara.berry@x.dummyjson.com",
+    "telefono": "+1 390-831-5172",
+    "fecha_nacimiento": {
+      "$date": "1994-02-13T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1577 Jefferson Street",
+      "ciudad": "Seattle",
+      "estado": "Montana",
+      "codigo_postal": "41818",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-16T06:38:31Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1adf039248787a70572ff70d"
+    },
+    "nombre": "Gavin",
+    "apellido": "Stanley",
+    "email": "gavin.stanley@x.dummyjson.com",
+    "telefono": "+44 466-358-6026",
+    "fecha_nacimiento": {
+      "$date": "1992-03-17T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1898 Second Street",
+      "ciudad": "Houston",
+      "estado": "Mississippi",
+      "codigo_postal": "85234",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-15T02:32:17Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f0dc7a1dd210667d1293a1af"
+    },
+    "nombre": "Lila",
+    "apellido": "Hudson",
+    "email": "lila.hudson@x.dummyjson.com",
+    "telefono": "+91 697-236-1544",
+    "fecha_nacimiento": {
+      "$date": "1997-09-01T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "262 Ninth Street",
+      "ciudad": "Chicago",
+      "estado": "Nevada",
+      "codigo_postal": "17472",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-02-11T15:20:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2626cf90f24d15fe3f1e8ec3"
+    },
+    "nombre": "Alice",
+    "apellido": "Smith",
+    "email": "alice.smith@x.dummyjson.com",
+    "telefono": "+61 611-556-8989",
+    "fecha_nacimiento": {
+      "$date": "1996-09-08T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1631 Fourth Street",
+      "ciudad": "Houston",
+      "estado": "Arkansas",
+      "codigo_postal": "81896",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-19T06:02:45Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9b98ca9e39c6856173e8714c"
+    },
+    "nombre": "John",
+    "apellido": "Doe",
+    "email": "john.doe@x.dummyjson.com",
+    "telefono": "+44 242-757-6754",
+    "fecha_nacimiento": {
+      "$date": "1989-02-20T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "37 Second Street",
+      "ciudad": "Fort Worth",
+      "estado": "New York",
+      "codigo_postal": "33991",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-30T02:40:07Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "96fd6d4e919e0f9cf5bd19f2"
+    },
+    "nombre": "Emily",
+    "apellido": "Brown",
+    "email": "emily.brown@x.dummyjson.com",
+    "telefono": "+61 875-999-8871",
+    "fecha_nacimiento": {
+      "$date": "1982-12-05T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1962 Fourth Street",
+      "ciudad": "Houston",
+      "estado": "Hawaii",
+      "codigo_postal": "67104",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-15T10:27:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "35a03643a914283d2c8d1328"
+    },
+    "nombre": "Michael",
+    "apellido": "Johnson",
+    "email": "michael.johnson@x.dummyjson.com",
+    "telefono": "+92 290-825-4767",
+    "fecha_nacimiento": {
+      "$date": "2000-01-06T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1252 Washington Street",
+      "ciudad": "Phoenix",
+      "estado": "Maryland",
+      "codigo_postal": "64002",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-03T01:52:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6873b098784a083b49b448b3"
+    },
+    "nombre": "Emma",
+    "apellido": "Wilson",
+    "email": "emma.wilson@x.dummyjson.com",
+    "telefono": "+49 933-975-3236",
+    "fecha_nacimiento": {
+      "$date": "1993-06-02T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "888 Lincoln Street",
+      "ciudad": "New York",
+      "estado": "Kansas",
+      "codigo_postal": "85313",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-29T16:13:51Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7412af3bec43c9caa096a9cd"
+    },
+    "nombre": "David",
+    "apellido": "Martinez",
+    "email": "david.martinez@x.dummyjson.com",
+    "telefono": "+1 846-350-3024",
+    "fecha_nacimiento": {
+      "$date": "1985-06-11T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "510 Pine Street",
+      "ciudad": "Seattle",
+      "estado": "New Jersey",
+      "codigo_postal": "75448",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-02T15:37:02Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6c1d8b39a526e844d324120f"
+    },
+    "nombre": "Olivia",
+    "apellido": "Anderson",
+    "email": "olivia.anderson@x.dummyjson.com",
+    "telefono": "+44 952-688-2836",
+    "fecha_nacimiento": {
+      "$date": "1995-06-23T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "466 Cedar Street",
+      "ciudad": "Houston",
+      "estado": "Vermont",
+      "codigo_postal": "37773",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-08T21:01:29Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ca4e98bfd391eb49701f77b0"
+    },
+    "nombre": "James",
+    "apellido": "Garcia",
+    "email": "james.garcia@x.dummyjson.com",
+    "telefono": "+1 958-844-1106",
+    "fecha_nacimiento": {
+      "$date": "1979-11-29T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "41 Maple Street",
+      "ciudad": "Washington",
+      "estado": "Maryland",
+      "codigo_postal": "54618",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-24T04:40:14Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b367f145808a7e7014990ae3"
+    },
+    "nombre": "Sophia",
+    "apellido": "Jones",
+    "email": "sophia.jones@x.dummyjson.com",
+    "telefono": "+92 230-523-9981",
+    "fecha_nacimiento": {
+      "$date": "1991-05-21T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "895 Sixth Street",
+      "ciudad": "Phoenix",
+      "estado": "Georgia",
+      "codigo_postal": "24752",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-01T13:35:52Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bc529a4006173af6acd6dc93"
+    },
+    "nombre": "Daniel",
+    "apellido": "Taylor",
+    "email": "daniel.taylor@x.dummyjson.com",
+    "telefono": "+92 944-656-6731",
+    "fecha_nacimiento": {
+      "$date": "1997-12-21T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "339 Pine Street",
+      "ciudad": "San Francisco",
+      "estado": "Virginia",
+      "codigo_postal": "14050",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-04-01T00:45:52Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f305ffc3acd244930ac3c12c"
+    },
+    "nombre": "Isabella",
+    "apellido": "Jackson",
+    "email": "isabella.jackson@x.dummyjson.com",
+    "telefono": "+44 398-882-4460",
+    "fecha_nacimiento": {
+      "$date": "1988-12-26T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "200 Pine Street",
+      "ciudad": "Charlotte",
+      "estado": "Connecticut",
+      "codigo_postal": "80531",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-31T10:46:15Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "84a671ea472eff956fa2d07d"
+    },
+    "nombre": "Alexander",
+    "apellido": "Hernandez",
+    "email": "alexander.hernandez@x.dummyjson.com",
+    "telefono": "+49 410-245-8608",
+    "fecha_nacimiento": {
+      "$date": "1983-07-04T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "329 Second Street",
+      "ciudad": "Dallas",
+      "estado": "Idaho",
+      "codigo_postal": "49314",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-11T20:52:54Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7859685552ab1adb295469b1"
+    },
+    "nombre": "Mia",
+    "apellido": "Miller",
+    "email": "mia.miller@x.dummyjson.com",
+    "telefono": "+1 484-466-3879",
+    "fecha_nacimiento": {
+      "$date": "1999-07-10T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1706 First Street",
+      "ciudad": "Denver",
+      "estado": "Michigan",
+      "codigo_postal": "43350",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-19T20:12:43Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "49a9f166d0c28c0974165040"
+    },
+    "nombre": "Ethan",
+    "apellido": "Thompson",
+    "email": "ethan.thompson@x.dummyjson.com",
+    "telefono": "+1 872-403-3499",
+    "fecha_nacimiento": {
+      "$date": "1992-01-10T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1497 Tenth Street",
+      "ciudad": "Dallas",
+      "estado": "Tennessee",
+      "codigo_postal": "38792",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-08T02:15:36Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1df8c567dd83d3fc00a8de8a"
+    },
+    "nombre": "Charlotte",
+    "apellido": "Davis",
+    "email": "charlotte.davis@x.dummyjson.com",
+    "telefono": "+91 908-214-6224",
+    "fecha_nacimiento": {
+      "$date": "1986-01-18T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1787 Sixth Street",
+      "ciudad": "Fort Worth",
+      "estado": "Massachusetts",
+      "codigo_postal": "41530",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-24T19:51:47Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "690d30845c9fc17fa071c20d"
+    },
+    "nombre": "William",
+    "apellido": "Lopez",
+    "email": "william.lopez@x.dummyjson.com",
+    "telefono": "+49 254-368-2317",
+    "fecha_nacimiento": {
+      "$date": "1998-11-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "566 Madison Street",
+      "ciudad": "Washington",
+      "estado": "Arkansas",
+      "codigo_postal": "28272",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-07T02:36:02Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "448c21ed4970e1b27c1f07f9"
+    },
+    "nombre": "Amelia",
+    "apellido": "Perez",
+    "email": "amelia.perez@x.dummyjson.com",
+    "telefono": "+49 751-988-9521",
+    "fecha_nacimiento": {
+      "$date": "1981-01-29T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "25 Elm Street",
+      "ciudad": "New York",
+      "estado": "New Hampshire",
+      "codigo_postal": "88314",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-04T08:27:59Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9bcc3db5284f8d038d681739"
+    },
+    "nombre": "Benjamin",
+    "apellido": "Wilson",
+    "email": "benjamin.wilson@x.dummyjson.com",
+    "telefono": "+91 482-329-9835",
+    "fecha_nacimiento": {
+      "$date": "1994-03-11T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1469 Elm Street",
+      "ciudad": "Philadelphia",
+      "estado": "New Hampshire",
+      "codigo_postal": "47295",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-15T12:56:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e91d76f21ea5d5277feeb74a"
+    },
+    "nombre": "Liam",
+    "apellido": "Gonzalez",
+    "email": "liam.gonzalez@x.dummyjson.com",
+    "telefono": "+1 803-794-6247",
+    "fecha_nacimiento": {
+      "$date": "1990-09-14T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1628 Adams Street",
+      "ciudad": "Columbus",
+      "estado": "New Hampshire",
+      "codigo_postal": "31018",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-30T06:03:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b4456ad57bfa783e748d2562"
+    },
+    "nombre": "Evelyn",
+    "apellido": "Walker",
+    "email": "evelyn.walker@x.dummyjson.com",
+    "telefono": "+44 478-401-7533",
+    "fecha_nacimiento": {
+      "$date": "1987-08-24T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "310 Madison Street",
+      "ciudad": "Phoenix",
+      "estado": "Arizona",
+      "codigo_postal": "16437",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-28T01:14:05Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "eb9982bfe122dd1146c5cada"
+    },
+    "nombre": "Ava",
+    "apellido": "Harris",
+    "email": "ava.harris@x.dummyjson.com",
+    "telefono": "+44 422-227-6412",
+    "fecha_nacimiento": {
+      "$date": "1995-08-26T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "518 Elm Street",
+      "ciudad": "San Antonio",
+      "estado": "Florida",
+      "codigo_postal": "35171",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-18T07:05:14Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "57efc98144d20048b94cd696"
+    },
+    "nombre": "Liam",
+    "apellido": "Smith",
+    "email": "liam.smith@x.dummyjson.com",
+    "telefono": "+44 293-526-4966",
+    "fecha_nacimiento": {
+      "$date": "1980-11-24T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "781 Jefferson Street",
+      "ciudad": "Jacksonville",
+      "estado": "Vermont",
+      "codigo_postal": "34638",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-26T10:33:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ffa87ddd2672897b58558dc3"
+    },
+    "nombre": "Harper",
+    "apellido": "King",
+    "email": "harper.king@x.dummyjson.com",
+    "telefono": "+92 865-719-5676",
+    "fecha_nacimiento": {
+      "$date": "2001-06-17T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "881 Lincoln Street",
+      "ciudad": "Phoenix",
+      "estado": "Washington",
+      "codigo_postal": "60136",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-26T02:16:14Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6074ee52de30fbb23d92623b"
+    },
+    "nombre": "Noah",
+    "apellido": "Lewis",
+    "email": "noah.lewis@x.dummyjson.com",
+    "telefono": "+61 396-867-4229",
+    "fecha_nacimiento": {
+      "$date": "1985-06-09T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "41 Fifth Street",
+      "ciudad": "Denver",
+      "estado": "Alabama",
+      "codigo_postal": "42655",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-26T21:14:18Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c6690b51be79b4e9cf6162fd"
+    },
+    "nombre": "Logan",
+    "apellido": "Lee",
+    "email": "logan.lee@x.dummyjson.com",
+    "telefono": "+92 231-690-1885",
+    "fecha_nacimiento": {
+      "$date": "1979-10-18T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "474 Washington Street",
+      "ciudad": "Los Angeles",
+      "estado": "Oregon",
+      "codigo_postal": "85616",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-30T12:03:23Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cad2a6fb267ef6092080f797"
+    },
+    "nombre": "Avery",
+    "apellido": "Scott",
+    "email": "avery.scott@x.dummyjson.com",
+    "telefono": "+91 965-669-9087",
+    "fecha_nacimiento": {
+      "$date": "1997-10-13T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1766 Jefferson Street",
+      "ciudad": "New York",
+      "estado": "Arizona",
+      "codigo_postal": "18065",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-14T20:49:47Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "de19dfd8701986e97403b824"
+    },
+    "nombre": "Mason",
+    "apellido": "Wright",
+    "email": "mason.wright@x.dummyjson.com",
+    "telefono": "+61 251-806-5947",
+    "fecha_nacimiento": {
+      "$date": "1984-05-17T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1195 Main Street",
+      "ciudad": "Indianapolis",
+      "estado": "Tennessee",
+      "codigo_postal": "44469",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-14T10:33:19Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dea7f8271378c8f843569fb1"
+    },
+    "nombre": "Grace",
+    "apellido": "Green",
+    "email": "grace.green@x.dummyjson.com",
+    "telefono": "+91 339-788-2388",
+    "fecha_nacimiento": {
+      "$date": "1989-02-04T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1415 Oak Street",
+      "ciudad": "Los Angeles",
+      "estado": "Nevada",
+      "codigo_postal": "85922",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-04T17:37:34Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a614da54daacdb8861f451a0"
+    },
+    "nombre": "Lucas",
+    "apellido": "Allen",
+    "email": "lucas.allen@x.dummyjson.com",
+    "telefono": "+61 831-566-3134",
+    "fecha_nacimiento": {
+      "$date": "1998-11-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1160 Eighth Street",
+      "ciudad": "Jacksonville",
+      "estado": "New Mexico",
+      "codigo_postal": "78335",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-07-12T05:51:49Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e3c27cdf8a099e113ca1afeb"
+    },
+    "nombre": "Chloe",
+    "apellido": "Roberts",
+    "email": "chloe.roberts@x.dummyjson.com",
+    "telefono": "+44 900-399-5847",
+    "fecha_nacimiento": {
+      "$date": "1983-04-08T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1976 Elm Street",
+      "ciudad": "San Jose",
+      "estado": "Arkansas",
+      "codigo_postal": "83671",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-11T05:07:58Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ff3abf176ffa19c2a2b4df19"
+    },
+    "nombre": "Jackson",
+    "apellido": "Morales",
+    "email": "jackson.morales@x.dummyjson.com",
+    "telefono": "+1 685-561-9154",
+    "fecha_nacimiento": {
+      "$date": "1991-09-18T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1549 Main Street",
+      "ciudad": "Austin",
+      "estado": "Arkansas",
+      "codigo_postal": "23595",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-10T14:46:03Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2ab14ce7070b53cb0e4b5b5f"
+    },
+    "nombre": "Zoe",
+    "apellido": "Bennett",
+    "email": "zoe.bennett@x.dummyjson.com",
+    "telefono": "+44 944-423-6651",
+    "fecha_nacimiento": {
+      "$date": "1996-05-11T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1252 Seventh Street",
+      "ciudad": "San Jose",
+      "estado": "Utah",
+      "codigo_postal": "50908",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-30T12:35:01Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "253e876990aeca2e2b2c149c"
+    },
+    "nombre": "Carter",
+    "apellido": "Rivera",
+    "email": "carter.rivera@x.dummyjson.com",
+    "telefono": "+92 500-957-1453",
+    "fecha_nacimiento": {
+      "$date": "1987-01-19T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "89 Main Street",
+      "ciudad": "Phoenix",
+      "estado": "South Carolina",
+      "codigo_postal": "59420",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-24T03:08:33Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9eae3d7fe995243b76a34175"
+    },
+    "nombre": "Nora",
+    "apellido": "Russell",
+    "email": "nora.russell@x.dummyjson.com",
+    "telefono": "+81 415-979-9594",
+    "fecha_nacimiento": {
+      "$date": "2000-03-30T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1915 Elm Street",
+      "ciudad": "Charlotte",
+      "estado": "West Virginia",
+      "codigo_postal": "77947",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-17T07:38:05Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "aa02e6cd77e649ad8b281271"
+    },
+    "nombre": "Elijah",
+    "apellido": "Cruz",
+    "email": "elijah.cruz@x.dummyjson.com",
+    "telefono": "+1 613-532-2557",
+    "fecha_nacimiento": {
+      "$date": "1995-01-23T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "583 Second Street",
+      "ciudad": "Seattle",
+      "estado": "North Dakota",
+      "codigo_postal": "26483",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-25T09:48:36Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fc964ca3f66cb04074d84d32"
+    },
+    "nombre": "Madison",
+    "apellido": "Stewart",
+    "email": "madison.stewart@x.dummyjson.com",
+    "telefono": "+61 455-829-5048",
+    "fecha_nacimiento": {
+      "$date": "1988-05-15T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "823 Sixth Street",
+      "ciudad": "Indianapolis",
+      "estado": "Arkansas",
+      "codigo_postal": "66305",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-25T19:12:06Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "da7b1b3c61925b934bfeb34b"
+    },
+    "nombre": "Gabriel",
+    "apellido": "Bailey",
+    "email": "gabriel.bailey@x.dummyjson.com",
+    "telefono": "+91 970-512-5684",
+    "fecha_nacimiento": {
+      "$date": "1982-11-22T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1001 Fifth Street",
+      "ciudad": "Philadelphia",
+      "estado": "New Mexico",
+      "codigo_postal": "39924",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-18T00:59:01Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fad4a865460290ddafc7bef9"
+    },
+    "nombre": "Lily",
+    "apellido": "Torres",
+    "email": "lily.torres@x.dummyjson.com",
+    "telefono": "+91 610-954-3059",
+    "fecha_nacimiento": {
+      "$date": "1993-08-22T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1007 Lincoln Street",
+      "ciudad": "Chicago",
+      "estado": "Illinois",
+      "codigo_postal": "44296",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-02-08T02:15:03Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e99bbe7fd5e7e749c6cc3a9b"
+    },
+    "nombre": "Elijah",
+    "apellido": "Hill",
+    "email": "elijah.hill@x.dummyjson.com",
+    "telefono": "+91 906-692-9655",
+    "fecha_nacimiento": {
+      "$date": "1998-08-25T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1842 Eighth Street",
+      "ciudad": "Los Angeles",
+      "estado": "Maine",
+      "codigo_postal": "47017",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-14T21:05:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5a38a2309e40adc1b8c4a8ae"
+    },
+    "nombre": "Hannah",
+    "apellido": "Howard",
+    "email": "hannah.howard@x.dummyjson.com",
+    "telefono": "+1 884-326-8478",
+    "fecha_nacimiento": {
+      "$date": "1989-10-15T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "783 Fifth Street",
+      "ciudad": "Indianapolis",
+      "estado": "Indiana",
+      "codigo_postal": "72695",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-13T03:44:11Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "23a018e7a0a50a4fc9700894"
+    },
+    "nombre": "Owen",
+    "apellido": "Sullivan",
+    "email": "owen.sullivan@x.dummyjson.com",
+    "telefono": "+91 438-781-6749",
+    "fecha_nacimiento": {
+      "$date": "1981-01-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1487 Maple Street",
+      "ciudad": "Charlotte",
+      "estado": "Mississippi",
+      "codigo_postal": "78780",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-10T09:30:22Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bb2117e84b53bf6a2c3321c9"
+    },
+    "nombre": "Aria",
+    "apellido": "Parker",
+    "email": "aria.parker@x.dummyjson.com",
+    "telefono": "+91 762-847-6884",
+    "fecha_nacimiento": {
+      "$date": "1997-07-06T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1504 Tenth Street",
+      "ciudad": "Phoenix",
+      "estado": "Alabama",
+      "codigo_postal": "16573",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-22T23:17:21Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e0f85d8780e945d42a41e9d3"
+    },
+    "nombre": "Grayson",
+    "apellido": "Coleman",
+    "email": "grayson.coleman@x.dummyjson.com",
+    "telefono": "+61 238-607-2286",
+    "fecha_nacimiento": {
+      "$date": "1994-12-15T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "328 Fifth Street",
+      "ciudad": "San Francisco",
+      "estado": "Illinois",
+      "codigo_postal": "82802",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-09T06:17:40Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f7ce4bbfde56cd1d77f61324"
+    },
+    "nombre": "Ella",
+    "apellido": "Cook",
+    "email": "ella.cook@x.dummyjson.com",
+    "telefono": "+91 736-763-5452",
+    "fecha_nacimiento": {
+      "$date": "1986-10-28T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "624 Sixth Street",
+      "ciudad": "Fort Worth",
+      "estado": "New Hampshire",
+      "codigo_postal": "49323",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-08T18:24:09Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f739dcadb9acfa65f7d8cd8e"
+    },
+    "nombre": "Luke",
+    "apellido": "Cooper",
+    "email": "luke.cooper@x.dummyjson.com",
+    "telefono": "+61 347-869-6758",
+    "fecha_nacimiento": {
+      "$date": "1999-04-20T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "355 Ninth Street",
+      "ciudad": "San Antonio",
+      "estado": "Maryland",
+      "codigo_postal": "36126",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-11T02:32:28Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "17ca650343891f745eacbfac"
+    },
+    "nombre": "Leah",
+    "apellido": "Hughes",
+    "email": "leah.hughes@x.dummyjson.com",
+    "telefono": "+1 935-838-3386",
+    "fecha_nacimiento": {
+      "$date": "1992-06-02T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1329 Sixth Street",
+      "ciudad": "Indianapolis",
+      "estado": "Indiana",
+      "codigo_postal": "66061",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-22T15:02:34Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9561d2a3f05f1bac3b78069e"
+    },
+    "nombre": "Henry",
+    "apellido": "Turner",
+    "email": "henry.turner@x.dummyjson.com",
+    "telefono": "+1 374-470-5082",
+    "fecha_nacimiento": {
+      "$date": "1980-06-12T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "201 Sixth Street",
+      "ciudad": "Philadelphia",
+      "estado": "Ohio",
+      "codigo_postal": "41914",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-12T01:23:31Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "53ea9c38a510a2d276e8b34d"
+    },
+    "nombre": "Aurora",
+    "apellido": "Barnes",
+    "email": "aurora.barnes@x.dummyjson.com",
+    "telefono": "+91 403-842-9683",
+    "fecha_nacimiento": {
+      "$date": "1995-12-15T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1184 Adams Street",
+      "ciudad": "New York",
+      "estado": "Idaho",
+      "codigo_postal": "19201",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-19T06:42:01Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "681d230bf2094dfe7e1d183c"
+    },
+    "nombre": "Wyatt",
+    "apellido": "Perry",
+    "email": "wyatt.perry@x.dummyjson.com",
+    "telefono": "+81 370-801-1294",
+    "fecha_nacimiento": {
+      "$date": "1990-05-23T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1864 Oak Street",
+      "ciudad": "Charlotte",
+      "estado": "Wisconsin",
+      "codigo_postal": "26451",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-21T12:35:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2263745eabf3beb2f28a6b96"
+    },
+    "nombre": "Stella",
+    "apellido": "Morris",
+    "email": "stella.morris@x.dummyjson.com",
+    "telefono": "+1 202-954-5884",
+    "fecha_nacimiento": {
+      "$date": "1985-03-15T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "257 Ninth Street",
+      "ciudad": "San Diego",
+      "estado": "Rhode Island",
+      "codigo_postal": "80524",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-07-30T12:53:50Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "ba27e26aa719d57d9d68f0f3"
+    },
+    "nombre": "Nathan",
+    "apellido": "Reed",
+    "email": "nathan.reed@x.dummyjson.com",
+    "telefono": "+1 448-642-4577",
+    "fecha_nacimiento": {
+      "$date": "1996-12-26T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "82 Cedar Street",
+      "ciudad": "Los Angeles",
+      "estado": "Utah",
+      "codigo_postal": "73204",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-05T06:44:03Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "08b05e377171f33cda5c19fb"
+    },
+    "nombre": "Paisley",
+    "apellido": "Bell",
+    "email": "paisley.bell@x.dummyjson.com",
+    "telefono": "+81 744-537-2238",
+    "fecha_nacimiento": {
+      "$date": "1981-05-10T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "541 Elm Street",
+      "ciudad": "San Diego",
+      "estado": "Delaware",
+      "codigo_postal": "49147",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-16T14:00:23Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e8be6faa55b0f654630f71f"
+    },
+    "nombre": "Christian",
+    "apellido": "Perez",
+    "email": "christian.perez@x.dummyjson.com",
+    "telefono": "+91 223-371-4471",
+    "fecha_nacimiento": {
+      "$date": "1993-07-24T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1013 Madison Street",
+      "ciudad": "Chicago",
+      "estado": "Iowa",
+      "codigo_postal": "35579",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-20T16:29:03Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d27417a936a4a398f8050cc9"
+    },
+    "nombre": "Bella",
+    "apellido": "Gonzalez",
+    "email": "bella.gonzalez@x.dummyjson.com",
+    "telefono": "+81 213-723-5694",
+    "fecha_nacimiento": {
+      "$date": "1998-06-17T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1447 Main Street",
+      "ciudad": "Jacksonville",
+      "estado": "New York",
+      "codigo_postal": "65463",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-16T01:03:40Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3efd20c9903411d4c38d3596"
+    },
+    "nombre": "Nicholas",
+    "apellido": "Edwards",
+    "email": "nicholas.edwards@x.dummyjson.com",
+    "telefono": "+44 983-891-6014",
+    "fecha_nacimiento": {
+      "$date": "1983-01-13T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1796 First Street",
+      "ciudad": "Chicago",
+      "estado": "North Carolina",
+      "codigo_postal": "25035",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-16T17:37:29Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d0de3b54c625c9e6980046db"
+    },
+    "nombre": "Mila",
+    "apellido": "Hernandez",
+    "email": "mila.hernandez@x.dummyjson.com",
+    "telefono": "+49 893-855-2896",
+    "fecha_nacimiento": {
+      "$date": "1991-08-18T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1454 Oak Street",
+      "ciudad": "Seattle",
+      "estado": "New Mexico",
+      "codigo_postal": "46438",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-22T09:10:45Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "fc218a40cc2c1ca9dd062103"
+    },
+    "nombre": "Aaron",
+    "apellido": "Cook",
+    "email": "aaron.cook@x.dummyjson.com",
+    "telefono": "+81 362-539-6973",
+    "fecha_nacimiento": {
+      "$date": "1997-01-26T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "169 First Street",
+      "ciudad": "Phoenix",
+      "estado": "Wyoming",
+      "codigo_postal": "52331",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-10-05T06:07:12Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "cac93c9652042c430d20bd6b"
+    },
+    "nombre": "Aubrey",
+    "apellido": "Gutierrez",
+    "email": "aubrey.gutierrez@x.dummyjson.com",
+    "telefono": "+92 881-268-9845",
+    "fecha_nacimiento": {
+      "$date": "1988-02-19T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1207 Oak Street",
+      "ciudad": "Philadelphia",
+      "estado": "Connecticut",
+      "codigo_postal": "78892",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-02-12T14:56:42Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1dbe107972c75c83971b7380"
+    },
+    "nombre": "Eli",
+    "apellido": "Ward",
+    "email": "eli.ward@x.dummyjson.com",
+    "telefono": "+92 770-978-9439",
+    "fecha_nacimiento": {
+      "$date": "1994-04-24T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "850 Fourth Street",
+      "ciudad": "Columbus",
+      "estado": "Connecticut",
+      "codigo_postal": "67863",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-21T01:59:12Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f29d0bbac8e8dda8854d75a4"
+    },
+    "nombre": "Claire",
+    "apellido": "Foster",
+    "email": "claire.foster@x.dummyjson.com",
+    "telefono": "+81 570-848-1400",
+    "fecha_nacimiento": {
+      "$date": "1995-02-24T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "981 Pine Street",
+      "ciudad": "San Jose",
+      "estado": "Massachusetts",
+      "codigo_postal": "33308",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-25T04:41:24Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0fff7ad8666daf1b7db6e871"
+    },
+    "nombre": "James",
+    "apellido": "Gonzales",
+    "email": "james.gonzales@x.dummyjson.com",
+    "telefono": "+92 970-896-7544",
+    "fecha_nacimiento": {
+      "$date": "1980-09-05T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1535 Cedar Street",
+      "ciudad": "Seattle",
+      "estado": "Montana",
+      "codigo_postal": "32066",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-02-27T01:57:58Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e614529b251020469fa2958c"
+    },
+    "nombre": "Mateo",
+    "apellido": "Bennett",
+    "email": "mateo.bennett@x.dummyjson.com",
+    "telefono": "+91 232-996-1168",
+    "fecha_nacimiento": {
+      "$date": "1996-08-08T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "365 Washington Street",
+      "ciudad": "Jacksonville",
+      "estado": "Connecticut",
+      "codigo_postal": "61459",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-07-07T03:29:25Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5361fe98874b74819a6e19cb"
+    },
+    "nombre": "Julian",
+    "apellido": "James",
+    "email": "julian.james@x.dummyjson.com",
+    "telefono": "+92 871-230-2864",
+    "fecha_nacimiento": {
+      "$date": "2000-08-15T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1000 Fourth Street",
+      "ciudad": "Charlotte",
+      "estado": "Nebraska",
+      "codigo_postal": "25690",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-29T02:06:59Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1ddaa7a6e0c48db8dd376e73"
+    },
+    "nombre": "Addison",
+    "apellido": "Ward",
+    "email": "addison.ward@x.dummyjson.com",
+    "telefono": "+1 248-875-1802",
+    "fecha_nacimiento": {
+      "$date": "1995-08-23T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1320 Fifth Street",
+      "ciudad": "San Francisco",
+      "estado": "South Carolina",
+      "codigo_postal": "20149",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-26T11:25:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6956d374666aba18506d50aa"
+    },
+    "nombre": "Leo",
+    "apellido": "Rivera",
+    "email": "leo.rivera@x.dummyjson.com",
+    "telefono": "+44 625-386-6730",
+    "fecha_nacimiento": {
+      "$date": "1988-07-29T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "792 Adams Street",
+      "ciudad": "Fort Worth",
+      "estado": "Vermont",
+      "codigo_postal": "16848",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-07-16T23:29:24Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5ff427afec791117d415176e"
+    },
+    "nombre": "Elena",
+    "apellido": "Long",
+    "email": "elena.long@x.dummyjson.com",
+    "telefono": "+91 697-839-3216",
+    "fecha_nacimiento": {
+      "$date": "1982-04-04T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1883 Lincoln Street",
+      "ciudad": "San Jose",
+      "estado": "New York",
+      "codigo_postal": "29766",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-16T00:05:29Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bebd5fcf218e0f96f48f8f54"
+    },
+    "nombre": "Evan",
+    "apellido": "Wright",
+    "email": "evan.wright@x.dummyjson.com",
+    "telefono": "+92 329-343-8617",
+    "fecha_nacimiento": {
+      "$date": "1993-06-24T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1192 Seventh Street",
+      "ciudad": "San Jose",
+      "estado": "Wisconsin",
+      "codigo_postal": "20257",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-04T09:57:09Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1f695adfaaf0c06cdeeab80d"
+    },
+    "nombre": "Luna",
+    "apellido": "Perez",
+    "email": "luna.perez@x.dummyjson.com",
+    "telefono": "+92 202-261-2116",
+    "fecha_nacimiento": {
+      "$date": "1998-10-08T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "437 First Street",
+      "ciudad": "San Diego",
+      "estado": "Arizona",
+      "codigo_postal": "56628",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-08-11T09:48:02Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "994f5a1a93813627a87b39d8"
+    },
+    "nombre": "Jaxon",
+    "apellido": "Barnes",
+    "email": "jaxon.barnes@x.dummyjson.com",
+    "telefono": "+92 263-713-5362",
+    "fecha_nacimiento": {
+      "$date": "1983-07-16T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1965 Washington Street",
+      "ciudad": "Indianapolis",
+      "estado": "Colorado",
+      "codigo_postal": "56080",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-25T01:20:12Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "59d88e5e1dc3479239ce6dd8"
+    },
+    "nombre": "Penelope",
+    "apellido": "King",
+    "email": "penelope.king@x.dummyjson.com",
+    "telefono": "+44 802-959-3104",
+    "fecha_nacimiento": {
+      "$date": "1991-01-27T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1002 Eighth Street",
+      "ciudad": "Los Angeles",
+      "estado": "New Hampshire",
+      "codigo_postal": "35724",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-11T17:09:30Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f9c4d19f9daca48e069beda8"
+    },
+    "nombre": "Connor",
+    "apellido": "Baker",
+    "email": "connor.baker@x.dummyjson.com",
+    "telefono": "+49 638-260-8907",
+    "fecha_nacimiento": {
+      "$date": "1997-02-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "910 Adams Street",
+      "ciudad": "Indianapolis",
+      "estado": "Louisiana",
+      "codigo_postal": "37331",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-06T06:16:11Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b144072e45b3c34feb565901"
+    },
+    "nombre": "Ariana",
+    "apellido": "Ross",
+    "email": "ariana.ross@x.dummyjson.com",
+    "telefono": "+61 393-553-7155",
+    "fecha_nacimiento": {
+      "$date": "1988-09-26T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "911 First Street",
+      "ciudad": "Chicago",
+      "estado": "West Virginia",
+      "codigo_postal": "59220",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-20T21:38:40Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "de2490a8661124bda2f80717"
+    },
+    "nombre": "Asher",
+    "apellido": "Scott",
+    "email": "asher.scott@x.dummyjson.com",
+    "telefono": "+81 469-421-7639",
+    "fecha_nacimiento": {
+      "$date": "1994-08-18T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "666 Main Street",
+      "ciudad": "Dallas",
+      "estado": "Vermont",
+      "codigo_postal": "82460",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-02T12:31:52Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8737606b7457285e4fb853c6"
+    },
+    "nombre": "Sadie",
+    "apellido": "Morales",
+    "email": "sadie.morales@x.dummyjson.com",
+    "telefono": "+61 203-600-1121",
+    "fecha_nacimiento": {
+      "$date": "1995-02-09T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "702 Fifth Street",
+      "ciudad": "Seattle",
+      "estado": "Wisconsin",
+      "codigo_postal": "44232",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-16T20:42:38Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9815e20d2728c19e0cac1445"
+    },
+    "nombre": "Gabriel",
+    "apellido": "Mitchell",
+    "email": "gabriel.mitchell@x.dummyjson.com",
+    "telefono": "+81 861-548-2844",
+    "fecha_nacimiento": {
+      "$date": "1980-08-18T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1698 Ninth Street",
+      "ciudad": "Charlotte",
+      "estado": "Mississippi",
+      "codigo_postal": "14149",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-10T04:13:28Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a96c7c9b716a4537c1831d58"
+    },
+    "nombre": "Aaliyah",
+    "apellido": "Martinez",
+    "email": "aaliyah.martinez@x.dummyjson.com",
+    "telefono": "+91 862-924-5336",
+    "fecha_nacimiento": {
+      "$date": "1996-02-02T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "935 Fifth Street",
+      "ciudad": "New York",
+      "estado": "West Virginia",
+      "codigo_postal": "60165",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-11-29T22:10:15Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1c48adad977c86aa4e0b3865"
+    },
+    "nombre": "Xavier",
+    "apellido": "Wright",
+    "email": "xavier.wright@x.dummyjson.com",
+    "telefono": "+91 561-239-9006",
+    "fecha_nacimiento": {
+      "$date": "1987-01-11T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1497 Eighth Street",
+      "ciudad": "Jacksonville",
+      "estado": "Maryland",
+      "codigo_postal": "37262",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-04-10T12:13:37Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "0e01344df236c423c3414a53"
+    },
+    "nombre": "Savannah",
+    "apellido": "Gomez",
+    "email": "savannah.gomez@x.dummyjson.com",
+    "telefono": "+92 242-841-6772",
+    "fecha_nacimiento": {
+      "$date": "1999-02-16T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1410 Main Street",
+      "ciudad": "Austin",
+      "estado": "Mississippi",
+      "codigo_postal": "20453",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-04-03T04:40:13Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "017fbf6e2c216188b43a808f"
+    },
+    "nombre": "Tyler",
+    "apellido": "Davis",
+    "email": "tyler.davis@x.dummyjson.com",
+    "telefono": "+92 633-378-5551",
+    "fecha_nacimiento": {
+      "$date": "1982-05-21T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1859 Elm Street",
+      "ciudad": "Columbus",
+      "estado": "Wisconsin",
+      "codigo_postal": "59597",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-09T06:50:53Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "abce5a1265dcbd0a6f0475eb"
+    },
+    "nombre": "Aurora",
+    "apellido": "Rodriguez",
+    "email": "aurora.rodriguez@x.dummyjson.com",
+    "telefono": "+61 393-225-2755",
+    "fecha_nacimiento": {
+      "$date": "1993-11-23T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1388 Madison Street",
+      "ciudad": "Chicago",
+      "estado": "Missouri",
+      "codigo_postal": "60765",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-01T11:27:51Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "dc50936d9267b5a36a4a1d67"
+    },
+    "nombre": "Brandon",
+    "apellido": "Collins",
+    "email": "brandon.collins@x.dummyjson.com",
+    "telefono": "+91 994-732-2700",
+    "fecha_nacimiento": {
+      "$date": "1998-01-19T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "374 First Street",
+      "ciudad": "Dallas",
+      "estado": "Delaware",
+      "codigo_postal": "62698",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-01-17T04:47:39Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f7532bcdf29e75d4b0eb5c16"
+    },
+    "nombre": "Ellie",
+    "apellido": "Stewart",
+    "email": "ellie.stewart@x.dummyjson.com",
+    "telefono": "+1 901-445-7668",
+    "fecha_nacimiento": {
+      "$date": "1983-11-02T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1700 Cedar Street",
+      "ciudad": "Philadelphia",
+      "estado": "Idaho",
+      "codigo_postal": "25365",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-05T04:53:51Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "d81b3e6f9666861465de4fbe"
+    },
+    "nombre": "Cameron",
+    "apellido": "Perez",
+    "email": "cameron.perez@x.dummyjson.com",
+    "telefono": "+91 275-868-7103",
+    "fecha_nacimiento": {
+      "$date": "1991-09-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1179 Second Street",
+      "ciudad": "San Jose",
+      "estado": "Georgia",
+      "codigo_postal": "51464",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-20T16:59:10Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "3855c72b1382a21d878231e7"
+    },
+    "nombre": "Natalie",
+    "apellido": "Price",
+    "email": "natalie.price@x.dummyjson.com",
+    "telefono": "+91 273-928-7633",
+    "fecha_nacimiento": {
+      "$date": "1996-10-09T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1403 Lincoln Street",
+      "ciudad": "Washington",
+      "estado": "Maryland",
+      "codigo_postal": "76767",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-25T21:56:34Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5959baf5d1a5d0253c1a2541"
+    },
+    "nombre": "Henry",
+    "apellido": "Adams",
+    "email": "henry.adams@x.dummyjson.com",
+    "telefono": "+61 715-487-1979",
+    "fecha_nacimiento": {
+      "$date": "1980-07-14T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "151 Oak Street",
+      "ciudad": "Dallas",
+      "estado": "Georgia",
+      "codigo_postal": "78616",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-02T05:24:46Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2c9a27c2c2a7132df3c5a07e"
+    },
+    "nombre": "Harper",
+    "apellido": "Garcia",
+    "email": "harper.garcia@x.dummyjson.com",
+    "telefono": "+92 230-235-4683",
+    "fecha_nacimiento": {
+      "$date": "1995-05-05T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "905 Ninth Street",
+      "ciudad": "Los Angeles",
+      "estado": "Michigan",
+      "codigo_postal": "33556",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-12-26T08:42:43Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c190c29472aeece190a4a2fc"
+    },
+    "nombre": "Zachary",
+    "apellido": "Lee",
+    "email": "zachary.lee@x.dummyjson.com",
+    "telefono": "+61 382-295-6973",
+    "fecha_nacimiento": {
+      "$date": "1988-12-26T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1532 Third Street",
+      "ciudad": "Dallas",
+      "estado": "Alabama",
+      "codigo_postal": "60280",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-04-30T01:55:47Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "52ddf8a0502670117871a14d"
+    },
+    "nombre": "Aria",
+    "apellido": "Flores",
+    "email": "aria.flores@x.dummyjson.com",
+    "telefono": "+61 415-771-8232",
+    "fecha_nacimiento": {
+      "$date": "1999-11-08T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "492 Pine Street",
+      "ciudad": "Indianapolis",
+      "estado": "Tennessee",
+      "codigo_postal": "71284",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-10T12:39:40Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "46970e5a81124f7673090e5e"
+    },
+    "nombre": "Tristan",
+    "apellido": "Scott",
+    "email": "tristan.scott@x.dummyjson.com",
+    "telefono": "+44 401-329-9855",
+    "fecha_nacimiento": {
+      "$date": "1994-12-02T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "407 Tenth Street",
+      "ciudad": "San Diego",
+      "estado": "Arkansas",
+      "codigo_postal": "74135",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-07T23:56:56Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4913a5ddfada179d98816276"
+    },
+    "nombre": "Leah",
+    "apellido": "Gutierrez",
+    "email": "leah.gutierrez@x.dummyjson.com",
+    "telefono": "+1 300-470-3376",
+    "fecha_nacimiento": {
+      "$date": "1993-06-22T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "370 Fifth Street",
+      "ciudad": "Denver",
+      "estado": "Michigan",
+      "codigo_postal": "70175",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-26T18:07:27Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "8df4cabde50a73e8cf92a630"
+    },
+    "nombre": "Layla",
+    "apellido": "Young",
+    "email": "layla.young@x.dummyjson.com",
+    "telefono": "+44 224-805-7678",
+    "fecha_nacimiento": {
+      "$date": "1983-04-30T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "856 Third Street",
+      "ciudad": "Houston",
+      "estado": "Florida",
+      "codigo_postal": "49221",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-06T17:41:35Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9a798026f50f731acfe6d657"
+    },
+    "nombre": "Nolan",
+    "apellido": "Gonzalez",
+    "email": "nolan.gonzalez@x.dummyjson.com",
+    "telefono": "+49 666-608-6933",
+    "fecha_nacimiento": {
+      "$date": "1991-06-11T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "688 Eighth Street",
+      "ciudad": "San Francisco",
+      "estado": "Vermont",
+      "codigo_postal": "41010",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-07-08T19:48:25Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1581a52c0a3fb570fd708685"
+    },
+    "nombre": "Hazel",
+    "apellido": "Evans",
+    "email": "hazel.evans@x.dummyjson.com",
+    "telefono": "+92 319-405-4110",
+    "fecha_nacimiento": {
+      "$date": "1996-08-11T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "855 Jefferson Street",
+      "ciudad": "Dallas",
+      "estado": "South Dakota",
+      "codigo_postal": "49273",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-04-18T15:35:48Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "285d5fea486368c656ad990d"
+    },
+    "nombre": "Brayden",
+    "apellido": "Hill",
+    "email": "brayden.hill@x.dummyjson.com",
+    "telefono": "+61 371-853-2857",
+    "fecha_nacimiento": {
+      "$date": "1979-04-20T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "144 Jefferson Street",
+      "ciudad": "Austin",
+      "estado": "Massachusetts",
+      "codigo_postal": "40298",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-05T00:15:22Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a1a5551054188ead624840b9"
+    },
+    "nombre": "Violet",
+    "apellido": "Roberts",
+    "email": "violet.roberts@x.dummyjson.com",
+    "telefono": "+49 724-357-9329",
+    "fecha_nacimiento": {
+      "$date": "1995-06-14T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1117 Tenth Street",
+      "ciudad": "San Jose",
+      "estado": "South Carolina",
+      "codigo_postal": "89729",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-23T10:20:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "a8f6e89adf26551495a924ea"
+    },
+    "nombre": "Lucas",
+    "apellido": "Ramirez",
+    "email": "lucas.ramirez@x.dummyjson.com",
+    "telefono": "+92 745-454-8374",
+    "fecha_nacimiento": {
+      "$date": "1990-12-04T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "773 Fourth Street",
+      "ciudad": "San Francisco",
+      "estado": "Delaware",
+      "codigo_postal": "33971",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-09-28T17:07:55Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "4ff7a7b2a9642198b5f0154f"
+    },
+    "nombre": "Eleanor",
+    "apellido": "Collins",
+    "email": "eleanor.collins@x.dummyjson.com",
+    "telefono": "+44 353-303-4041",
+    "fecha_nacimiento": {
+      "$date": "1987-01-20T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "285 Adams Street",
+      "ciudad": "Phoenix",
+      "estado": "Utah",
+      "codigo_postal": "18908",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-03-10T03:03:45Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "60a4ca54d020abb3d4f2bdff"
+    },
+    "nombre": "Max",
+    "apellido": "Parker",
+    "email": "max.parker@x.dummyjson.com",
+    "telefono": "+81 250-310-5486",
+    "fecha_nacimiento": {
+      "$date": "1992-01-15T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1038 Oak Street",
+      "ciudad": "Washington",
+      "estado": "Alaska",
+      "codigo_postal": "20650",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-06-16T09:03:04Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e98617a5ab6c825c045c4f2e"
+    },
+    "nombre": "Vivian",
+    "apellido": "Carter",
+    "email": "vivian.carter@x.dummyjson.com",
+    "telefono": "+92 237-734-8586",
+    "fecha_nacimiento": {
+      "$date": "1998-02-25T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "511 First Street",
+      "ciudad": "Indianapolis",
+      "estado": "Pennsylvania",
+      "codigo_postal": "29369",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-15T08:50:26Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "57f2c47c3139ff2327134bd8"
+    },
+    "nombre": "Adrian",
+    "apellido": "Flores",
+    "email": "adrian.flores@x.dummyjson.com",
+    "telefono": "+61 524-858-7351",
+    "fecha_nacimiento": {
+      "$date": "1981-05-01T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1395 Madison Street",
+      "ciudad": "New York",
+      "estado": "Delaware",
+      "codigo_postal": "60163",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-09-04T03:37:29Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1981c58ad5bde28609a956e0"
+    },
+    "nombre": "Maya",
+    "apellido": "Reed",
+    "email": "maya.reed@x.dummyjson.com",
+    "telefono": "+92 291-415-7257",
+    "fecha_nacimiento": {
+      "$date": "1995-09-12T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1579 Pine Street",
+      "ciudad": "Seattle",
+      "estado": "Florida",
+      "codigo_postal": "88510",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-18T05:00:32Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "9e21986027292ed4b1c59fcf"
+    },
+    "nombre": "Caleb",
+    "apellido": "Nelson",
+    "email": "caleb.nelson@x.dummyjson.com",
+    "telefono": "+91 820-504-1614",
+    "fecha_nacimiento": {
+      "$date": "1988-09-25T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "684 Madison Street",
+      "ciudad": "Philadelphia",
+      "estado": "North Dakota",
+      "codigo_postal": "22625",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-05-08T13:52:25Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b8700b695dadb83cf8719c48"
+    },
+    "nombre": "Nova",
+    "apellido": "Cooper",
+    "email": "nova.cooper@x.dummyjson.com",
+    "telefono": "+49 292-569-8252",
+    "fecha_nacimiento": {
+      "$date": "1993-06-16T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1687 Pine Street",
+      "ciudad": "Los Angeles",
+      "estado": "Nebraska",
+      "codigo_postal": "49131",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-08-07T09:35:16Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "bfc8723b883d4ff7cfc878e7"
+    },
+    "nombre": "Mateo",
+    "apellido": "Perez",
+    "email": "mateo.perez@x.dummyjson.com",
+    "telefono": "+44 704-302-8113",
+    "fecha_nacimiento": {
+      "$date": "1979-01-26T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "798 Ninth Street",
+      "ciudad": "Jacksonville",
+      "estado": "Texas",
+      "codigo_postal": "12771",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-10-10T15:38:31Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "315eadf292fc7076c448c761"
+    },
+    "nombre": "Aubrey",
+    "apellido": "Garcia",
+    "email": "aubrey.garcia@x.dummyjson.com",
+    "telefono": "+1 470-576-9130",
+    "fecha_nacimiento": {
+      "$date": "1996-11-05T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1221 Washington Street",
+      "ciudad": "Los Angeles",
+      "estado": "South Carolina",
+      "codigo_postal": "78498",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-01-25T14:51:36Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "876bf729d133cd9a23df400d"
+    },
+    "nombre": "Elena",
+    "apellido": "Baker",
+    "email": "elena.baker@x.dummyjson.com",
+    "telefono": "+49 978-346-6960",
+    "fecha_nacimiento": {
+      "$date": "1990-03-16T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "117 Maple Street",
+      "ciudad": "San Francisco",
+      "estado": "Tennessee",
+      "codigo_postal": "40535",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2025-05-13T00:26:36Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "7bdf5f8def1ab6d884d91f48"
+    },
+    "nombre": "Jace",
+    "apellido": "Smith",
+    "email": "jace.smith@x.dummyjson.com",
+    "telefono": "+1 634-923-7779",
+    "fecha_nacimiento": {
+      "$date": "1983-12-18T00:00:00Z"
+    },
+    "genero": "male",
+    "direccion": {
+      "calle": "1856 Tenth Street",
+      "ciudad": "Seattle",
+      "estado": "South Dakota",
+      "codigo_postal": "60977",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-03-06T03:32:44Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "c3294573e78325d46f17f2e9"
+    },
+    "nombre": "Samantha",
+    "apellido": "Martinez",
+    "email": "samantha.martinez@x.dummyjson.com",
+    "telefono": "+49 493-402-2473",
+    "fecha_nacimiento": {
+      "$date": "1997-09-03T00:00:00Z"
+    },
+    "genero": "female",
+    "direccion": {
+      "calle": "1890 First Street",
+      "ciudad": "Los Angeles",
+      "estado": "New Hampshire",
+      "codigo_postal": "53772",
+      "pais": "United States"
+    },
+    "fecha_alta": {
+      "$date": "2024-06-21T11:05:18Z"
+    }
+  }
+]
