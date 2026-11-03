@@ -1,7 +1,7 @@
 # TP Integrador NoSQL · Diseño del modelo documental (entregable 5.1)
 
 Base de Datos Aplicada · UCC · Grupo: Justo Solana Allende, Salvador Solana Allende, Agustín Rodríguez Richard
-Estado: **implementado** (29/10/2026). Las decisiones que estaban abiertas se tomaron al implementar y están en la sección 9; quedan para confirmar en grupo.
+Estado: **implementado** (29/10/2026). Las decisiones que estaban abiertas se tomaron al implementar y están en la sección 9.
 
 ---
 
@@ -213,10 +213,9 @@ Guarda el último `numero` de pedido usado. La API lo incrementa con `$inc` dent
 | pedidos | `{estado: 1, fecha: 1}` | Reportes por estado y período |
 | *(extensión, no implementada)* productos | texto sobre `titulo` y `descripcion` | Búsqueda de productos por palabra |
 
-## 9. Decisiones tomadas al implementar (a confirmar en grupo)
+## 9. Decisiones tomadas al implementar
 
 - **DELETE de producto: lógico.** Marca `activo: false` y `eliminado_en`. La API trata al producto como inexistente (404 en GET, PATCH y DELETE; no aparece en el listado; no se puede comprar), pero el documento sigue en la base. Motivos: los pedidos lo referencian por `producto_id` para devolver stock al cancelar y el análisis lo cruza para obtener la categoría. Costo: todas las consultas de la API filtran `activo: {$ne: false}`, y el `sku` de un producto dado de baja no se puede reutilizar (sigue en el índice único).
 - **Nombres de campos en español.** La transformación ya los genera así, y el dominio se explica en español en la defensa.
 - **Sin `$jsonSchema`.** La validación se hace con Pydantic en la API (tipos, rangos, campos obligatorios y desconocidos). La validación en Mongo protegería también contra escrituras que no pasen por la API; queda como extensión opcional.
 - **`cantidad_minima`: dato informativo.** Se conserva como viene del dataset, pero la API no la valida al crear un pedido. Validarla haría que casi todos los pedidos históricos fueran inválidos (los carritos tienen como máximo 5 unidades por ítem, y el mínimo llega a 50).
-- **Reparto de tareas:** pendiente.

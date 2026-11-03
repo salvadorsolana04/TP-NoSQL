@@ -4,7 +4,7 @@ Contexto interno para quien modifique el proyecto: estado, decisiones tomadas y 
 
 ## Estado
 
-Todo lo obligatorio de la consigna está hecho (ver la tabla del README). Pendiente: confirmar en grupo las decisiones de la sección 9 del diseño y preparar la presentación. Extensiones opcionales no hechas: índice de texto y `$jsonSchema`.
+Todo lo obligatorio de la consigna está hecho (ver la tabla del README). Extensiones opcionales no hechas: índice de texto y `$jsonSchema`.
 
 ## Convenciones
 
