@@ -94,7 +94,7 @@ Conclusiones del análisis:
 
 - **Regla ESR.** El mismo índice con los campos al revés (`{precio, categoria}`) lee 23 claves en lugar de 13, porque recorre los precios de todas las categorías.
 - **Selectividad.** `estado_fecha` sobre "entregado" (88 % de los pedidos) lee 159 de 208 documentos: casi no ahorra trabajo. Un índice sirve más cuanto más chico es el resultado comparado con la colección.
-- **Costo.** Los índices ocupan entre el 17 % y el 41 % de lo que ocupan los datos (inflado por el tamaño mínimo de bloque con tan pocos documentos), y cada inserción de pedido actualiza 3 índices. `stock` no se indexó: se modifica en cada compra y ninguna consulta frecuente filtra por él.
+- **Costo.** Los índices ocupan una parte importante de lo que ocupan los datos (entre el 25 % y el 71 % en la última medición), pero con tan pocos documentos ese tamaño varía entre mediciones y está inflado por el bloque mínimo del motor de almacenamiento, así que no se toma como proporción real. Además, cada inserción de pedido actualiza 3 índices. `stock` no se indexó: se modifica en cada compra y ninguna consulta frecuente filtra por él.
 
 ## 6. Consistencia y transacciones
 

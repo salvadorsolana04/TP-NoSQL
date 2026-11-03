@@ -88,11 +88,11 @@ E11000 duplicate key error collection: ecommerce.productos index: sku_unico dup 
 
 | Colección | Datos (bytes) | Índices (bytes) |
 |---|---:|---:|
-| productos | 263 140 | 45 056 |
-| clientes | 69 590 | 28 672 |
-| pedidos | 265 502 | 49 152 |
+| productos | 263 140 | 65 536 |
+| clientes | 69 590 | 49 152 |
+| pedidos | 265 502 | 69 632 |
 
-Los índices ocupan entre un 17 % y un 41 % de lo que ocupan los datos. Con tan pocos documentos, el tamaño de cada índice está dominado por el bloque mínimo que reserva el motor de almacenamiento (por eso varios miden exactamente 20 480 o 24 576 bytes): no hay que leerlo como una proporción que se mantenga al crecer. Un índice guarda solo los campos indexados y un puntero al documento, así que con muchos documentos ocupa bastante menos que la colección.
+En esta medición los índices ocupan entre un cuarto y casi tres cuartos de lo que ocupan los datos (25 % en productos, 71 % en clientes, 26 % en pedidos). **El tamaño de los índices no es estable con tan pocos documentos:** una medición hecha justo después de cargar dio 45 056, 28 672 y 49 152 bytes, porque el índice `_id_` todavía medía 4 096 bytes. Además, cada índice está dominado por el bloque mínimo que reserva el motor de almacenamiento (por eso casi todos miden exactamente 20 480 o 24 576 bytes). Por eso no hay que leerlo como una proporción real ni que se mantenga al crecer: un índice guarda solo los campos indexados y un puntero al documento, así que con muchos documentos ocupa bastante menos que la colección. Lo que sí vale es la conclusión cualitativa: cada índice cuesta espacio.
 
 ### Mantenimiento en las escrituras
 

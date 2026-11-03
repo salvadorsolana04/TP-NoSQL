@@ -4,11 +4,7 @@ Base de Datos Aplicada · UCC · Justo Solana Allende, Salvador Solana Allende, 
 
 Tienda online sobre **MongoDB 7**: catálogo de productos con atributos que cambian según la categoría, clientes y pedidos que descuentan stock dentro de una **transacción**. Incluye una API (FastAPI) con capa de repositorios, 10 consultas y agregaciones, índices analizados con `explain`, pruebas automáticas y un notebook de análisis de ventas, todo levantado con Docker Compose.
 
-> ## 👉 Si recién llegás al repo (o le pasás un archivo a una IA), leé primero [`AGENTS.md`](AGENTS.md)
->
-> Tiene el contexto completo: qué es cada carpeta, qué está hecho, por qué se tomó cada decisión, las reglas del proyecto y cómo verificar que todo funciona.
-> **Si usás Codex, Cursor, Copilot u otro asistente**, pedile que lea `AGENTS.md` antes de tocar nada (Codex lo lee solo). Claude Code lee `CLAUDE.md`, que apunta al mismo contexto.
-> Al pasarle un archivo suelto a una IA, pasale también `AGENTS.md`: sin él no sabe, por ejemplo, que el borrado de productos es lógico, que desde tu máquina hace falta `directConnection=true` o que los datos se generan con semilla fija.
+Las decisiones técnicas y los detalles a tener en cuenta para modificar el proyecto están en [`AGENTS.md`](AGENTS.md).
 
 ## Qué hay en el repo
 

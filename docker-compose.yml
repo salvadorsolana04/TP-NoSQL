@@ -9,8 +9,10 @@ services:
     image: mongo:7
     # --replSet: las transacciones multidocumento necesitan el oplog, que solo existe
     # en un replica set. Un nodo alcanza; no buscamos alta disponibilidad, sino transacciones.
-    # --bind_ip_all: sin esto Mongo escucha solo en su propio localhost y los demás
-    # contenedores (mongo-init, la api) no podrían conectarse.
+    # --bind_ip_all: mongod solo escucha en localhost por defecto, y así los demás contenedores
+    # (mongo-init, la api) no podrían conectarse. La imagen oficial ya lo agrega si no se pasa
+    # --bind_ip; lo dejamos explícito para que se vea. Hacia afuera lo protege publicar el
+    # puerto solo en 127.0.0.1 (más abajo).
     command: ["--replSet", "rs0", "--bind_ip_all"]
     ports:
       # Solo 127.0.0.1: la base no tiene usuario, así que no la exponemos a la red local.
