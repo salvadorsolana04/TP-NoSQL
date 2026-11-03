@@ -84,6 +84,13 @@ def cargar(cliente: MongoClient, nombre_db: str) -> list[str]:
     cliente.drop_database(nombre_db)
     print(f"base '{nombre_db}' reiniciada")
 
+    # Mongo crearía cada colección sola en el primer insert; se crean explícitamente para
+    # que la estructura de la base quede declarada en un lugar (incluida contadores, que
+    # no tiene seed) y no dependa de que haya datos para cargar.
+    for nombre in COLECCIONES + ["contadores"]:
+        db.create_collection(nombre)
+    print(f"colecciones creadas: {', '.join(sorted(db.list_collection_names()))}")
+
     errores = []
     for nombre in COLECCIONES:
         documentos = leer_seed(nombre)

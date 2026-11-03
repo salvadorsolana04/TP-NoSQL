@@ -1,0 +1,26 @@
+# Evidencia del uso de índices (5.5) · 03/11/2026
+# Comando: docker compose exec mongo mongosh ecommerce --quiet --file /scripts/explain.js
+# Se corrió sobre la base recién cargada. El análisis está en mongo/explain.md.
+
+1) Smartphones entre $200 y $1000, ordenados por precio (índice categoria_precio)
+  con índice               plan: FETCH <- IXSCAN(categoria_precio)          devueltos:  13  claves:  13  docs:  13
+  sin índice               plan: SORT <- COLLSCAN                           devueltos:  13  claves:   0  docs: 194
+  orden inverso (no ESR)   plan: FETCH <- IXSCAN(tmp_precio_categoria)      devueltos:  13  claves:  23  docs:  13
+
+2) Pedidos del cliente 2745489a35b75734afa2da43 (tiene 5), del más reciente al más viejo (índice cliente_fecha)
+  con índice               plan: FETCH <- IXSCAN(cliente_fecha)             devueltos:   5  claves:   5  docs:   5
+  sin índice               plan: SORT <- COLLSCAN                           devueltos:   5  claves:   0  docs: 208
+
+3) Pedidos cancelados desde 2026, por fecha (índice estado_fecha)
+  con índice               plan: FETCH <- IXSCAN(estado_fecha)              devueltos:  18  claves:  18  docs:  18
+  sin índice               plan: SORT <- COLLSCAN                           devueltos:  18  claves:   0  docs: 208
+   mismo índice con un estado muy frecuente:
+  entregados (con índice)  plan: FETCH <- IXSCAN(estado_fecha)              devueltos: 159  claves: 159  docs: 159
+
+4) Índice único: insertar un producto con un sku que ya existe
+  rechazado con código 11000: E11000 duplicate key error collection: ecommerce.productos index: sku_unico dup key: { sku: "BEA-ESS-ESS-001" }
+
+5) Tamaño de datos vs. índices (bytes)
+  productos  datos:  263140  índices:  45056  (_id_=4096, sku_unico=20480, categoria_precio=20480)
+  clientes   datos:   69590  índices:  28672  (_id_=4096, email_unico=24576)
+  pedidos    datos:  265502  índices:  49152  (_id_=4096, cliente_fecha=24576, estado_fecha=20480)

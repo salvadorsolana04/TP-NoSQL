@@ -19,6 +19,7 @@ Las decisiones técnicas y los detalles a tener en cuenta para modificar el proy
 | 5.7 Análisis de datos | [`analysis/analisis_ventas.ipynb`](analysis/analisis_ventas.ipynb) |
 | 5.8 Docker Compose | [`docker-compose.yml`](docker-compose.yml), [`.env.example`](.env.example) |
 | 7 Informe técnico | [`docs/informe_tecnico.md`](docs/informe_tecnico.md) |
+| Evidencia de ejecución | [`evidencias/`](evidencias/): salida de la carga, del explain y de las pruebas (la de las consultas está en `mongo/consultas_salida.txt`) |
 
 ## Requisitos
 
@@ -45,7 +46,7 @@ Las decisiones técnicas y los detalles a tener en cuenta para modificar el proy
    python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements-dev.txt
    ```
 
-4. Cargar los datos. Borra la base `ecommerce`, carga `data/seed/`, verifica conteos (208 clientes, 194 productos, 208 pedidos) y referencias, inicializa el contador de pedidos y crea los índices. Se puede repetir cuando quieras volver al estado inicial.
+4. Cargar los datos. Borra la base `ecommerce`, crea las colecciones, carga `data/seed/`, verifica conteos (208 clientes, 194 productos, 208 pedidos) y referencias, inicializa el contador de pedidos y crea los índices. Se puede repetir cuando quieras volver al estado inicial.
 
    ```bash
    python scripts/cargar.py

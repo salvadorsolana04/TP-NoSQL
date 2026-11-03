@@ -1,0 +1,14 @@
+# Evidencia de la carga (5.2) · 03/11/2026
+# Comando: python scripts/cargar.py
+
+base 'ecommerce' reiniciada
+colecciones creadas: clientes, contadores, pedidos, productos
+clientes: 208 documentos (seed: 208)
+productos: 194 documentos (seed: 194)
+pedidos: 208 documentos (seed: 208)
+índices creados:
+  productos: _id_, sku_unico, categoria_precio
+  clientes: _id_, email_unico
+  pedidos: _id_, cliente_fecha, estado_fecha
+
+verificación OK: conteos y referencias correctos

@@ -1,0 +1,38 @@
+# Evidencia de las pruebas automáticas (5.4 y 5.6) · 03/11/2026
+# Comando: pytest -v
+# Corren sobre la base ecommerce_test, que se crea con el mismo seed e índices y se borra al terminar.
+
+============================= test session starts ==============================
+platform darwin -- Python 3.13.3, pytest-8.3.4, pluggy-1.7.0 -- ./.venv/bin/python
+rootdir: .
+configfile: pytest.ini
+testpaths: tests
+plugins: platformdirs-4.14.3, anyio-4.16.0
+collecting ... collected 24 items
+
+tests/test_pedidos.py::test_crear_pedido_descuenta_stock_y_calcula_totales PASSED [  4%]
+tests/test_pedidos.py::test_sin_stock_en_un_item_no_se_descuenta_ninguno PASSED [  8%]
+tests/test_pedidos.py::test_producto_inexistente_no_deja_nada_a_medias PASSED [ 12%]
+tests/test_pedidos.py::test_falla_inesperada_despues_de_descontar_stock PASSED [ 16%]
+tests/test_pedidos.py::test_cliente_inexistente_da_404 PASSED            [ 20%]
+tests/test_pedidos.py::test_validaciones_del_pedido_dan_422 PASSED       [ 25%]
+tests/test_pedidos.py::test_cancelar_devuelve_stock PASSED               [ 29%]
+tests/test_pedidos.py::test_no_se_cancela_un_pedido_entregado PASSED     [ 33%]
+tests/test_pedidos.py::test_pedidos_de_un_cliente_ordenados_por_fecha PASSED [ 37%]
+tests/test_pedidos.py::test_compras_simultaneas_de_la_ultima_unidad PASSED [ 41%]
+tests/test_productos.py::test_crear_y_obtener PASSED                     [ 45%]
+tests/test_productos.py::test_crear_devuelve_location PASSED             [ 50%]
+tests/test_productos.py::test_campo_opcional_ausente_no_se_guarda_como_null PASSED [ 54%]
+tests/test_productos.py::test_sku_duplicado_da_409 PASSED                [ 58%]
+tests/test_productos.py::test_validaciones_de_alta_dan_422 PASSED        [ 62%]
+tests/test_productos.py::test_id_mal_formado_da_422_e_inexistente_404 PASSED [ 66%]
+tests/test_productos.py::test_listar_con_filtros PASSED                  [ 70%]
+tests/test_productos.py::test_listar_pagina_sin_repetir PASSED           [ 75%]
+tests/test_productos.py::test_actualizar_modifica_y_borra_campos PASSED  [ 79%]
+tests/test_productos.py::test_actualizar_invalido_da_422 PASSED          [ 83%]
+tests/test_productos.py::test_actualizar_a_sku_existente_da_409 PASSED   [ 87%]
+tests/test_productos.py::test_eliminar_es_logico PASSED                  [ 91%]
+tests/test_productos.py::test_review_recalcula_rating PASSED             [ 95%]
+tests/test_productos.py::test_review_invalida_da_422 PASSED              [100%]
+
+============================== 24 passed in 1.47s ==============================

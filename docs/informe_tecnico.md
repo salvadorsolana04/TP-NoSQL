@@ -94,7 +94,7 @@ Conclusiones del análisis:
 
 - **Regla ESR.** El mismo índice con los campos al revés (`{precio, categoria}`) lee 23 claves en lugar de 13, porque recorre los precios de todas las categorías.
 - **Selectividad.** `estado_fecha` sobre "entregado" (88 % de los pedidos) lee 159 de 208 documentos: casi no ahorra trabajo. Un índice sirve más cuanto más chico es el resultado comparado con la colección.
-- **Costo.** Los índices ocupan una parte importante de lo que ocupan los datos (entre el 25 % y el 71 % en la última medición), pero con tan pocos documentos ese tamaño varía entre mediciones y está inflado por el bloque mínimo del motor de almacenamiento, así que no se toma como proporción real. Además, cada inserción de pedido actualiza 3 índices. `stock` no se indexó: se modifica en cada compra y ninguna consulta frecuente filtra por él.
+- **Costo.** Los índices ocupan una parte importante de lo que ocupan los datos (entre el 17 % y el 41 % con la base recién cargada, y hasta un 71 % en mediciones posteriores), pero con tan pocos documentos ese tamaño varía entre mediciones y está inflado por el bloque mínimo del motor de almacenamiento, así que no se toma como proporción real. Además, cada inserción de pedido actualiza 3 índices. `stock` no se indexó: se modifica en cada compra y ninguna consulta frecuente filtra por él.
 
 ## 6. Consistencia y transacciones
 
@@ -169,8 +169,9 @@ pytest
 ```
 
 - `docker compose up` levanta Mongo, inicia el replica set (servicio `mongo-init`, idempotente) y la API. Los datos persisten en el volumen `mongo-data`.
-- `cargar.py` reinicia la base y verifica conteos y referencias (Mongo no valida claves foráneas, así que se chequean en el script).
+- `cargar.py` reinicia la base, crea las colecciones, carga los datos, verifica conteos y referencias (Mongo no valida claves foráneas, así que se chequean en el script) y crea los índices.
 - Sin secretos: Mongo no tiene usuario y solo escucha en `127.0.0.1`; se versiona `.env.example`, no `.env`.
+- **Evidencia de ejecución:** la salida de la carga, del explain y de las pruebas está en [`evidencias/`](../evidencias/), y la de las consultas en [`mongo/consultas_salida.txt`](../mongo/consultas_salida.txt).
 
 ## 10. Limitaciones y posibles mejoras
 
@@ -178,3 +179,29 @@ pytest
 - No hay autenticación ni CRUD de clientes (fuera del alcance de la consigna).
 - El contador de pedidos es un único documento que modifican todas las transacciones de alta: con mucho tráfico sería un punto de contención.
 - Extensiones posibles: índice de texto para buscar productos por palabra, validación `$jsonSchema` en Mongo y transiciones de estado del pedido (pagado, enviado, entregado) desde la API.
+
+## 11. Comparación con un modelo relacional (extensión opcional)
+
+Cómo se resolvería el mismo problema en una base relacional (por ejemplo, PostgreSQL):
+
+| Aspecto | Relacional | MongoDB (lo implementado) |
+|---|---|---|
+| Atributos por categoría | Columnas casi siempre en `NULL`, una tabla por categoría o un modelo EAV (`atributos(producto_id, nombre, valor)`) con un JOIN por atributo consultado | Subdocumento `atributos` con solo los campos que tiene cada producto; se consulta con notación de punto |
+| Pedido con sus ítems | Tablas `pedidos` y `lineas_pedido`, unidas con JOIN en cada lectura | Un documento con los ítems embebidos: una sola lectura |
+| Reseñas | Tabla `reviews` con clave foránea | Arreglo embebido en el producto |
+| Integridad referencial | Claves foráneas: la base rechaza un pedido de un cliente inexistente | No existe: la verifican la API y `cargar.py` |
+| Esquema y validación | Lo impone la base (tipos, `NOT NULL`, `CHECK`) | Flexible; se valida en la API (Pydantic) |
+| Unicidad | `UNIQUE` | Índice único (`sku`, `email`) |
+| Pedido + stock en varias filas | Transacción, disponible en cualquier instalación | Transacción multidocumento, que requiere replica set |
+| Reportes con cruces | SQL con JOIN y GROUP BY, muy maduro | Pipeline de agregación con `$lookup` |
+
+**Balance.** El modelo relacional habría dado integridad referencial y validación sin código propio, pero el catálogo heterogéneo obliga a elegir entre columnas vacías y un EAV difícil de consultar. Para este dominio, centrado en un catálogo variable y en pedidos que se leen completos, el modelo documental simplifica las lecturas y el modelo de datos, a cambio de mover a la aplicación parte de las garantías que en relacional da la base.
+
+## 12. Conclusiones
+
+- **El modelo documental se justificó por el acceso a los datos, no por moda.** Los atributos variables por categoría y el pedido que se lee completo son los dos casos en los que embeber y tener un esquema flexible simplifican el diseño. Donde los datos se comparten o tienen vida propia (clientes, productos) se usaron referencias, con copia de los campos que deben quedar congelados a la fecha de compra.
+- **La flexibilidad tiene costos que hubo que asumir.** Sin claves foráneas ni esquema en la base, la integridad pasó a la aplicación: validación con Pydantic, verificación de referencias en la carga y baja lógica para no romper los cruces históricos.
+- **Los índices se eligieron a partir de las consultas y se midieron con `explain`.** Leer solo lo que se devuelve (13 de 194 documentos en el listado por categoría) muestra su beneficio; la regla ESR, la selectividad y el costo en espacio y escrituras explican por qué no se indexó todo.
+- **La consistencia requirió combinar dos mecanismos.** La operación atómica por documento evita vender de más, y la transacción multidocumento evita que un pedido quede a medias. Las pruebas lo demuestran: sin la transacción fallan exactamente los casos de falla a mitad de camino.
+- **Los datos permiten tomar decisiones.** El análisis mostró una facturación concentrada en pocas ventas de alto valor, un ticket típico muy inferior al promedio y productos con demanda a punto de agotarse, con recomendaciones concretas para cada caso.
+- **Todo es reproducible desde cero** con Docker Compose, una carga con semilla fija y pruebas automáticas.
